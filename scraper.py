@@ -13,6 +13,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class CircularScraper:
     def __init__(self):
+        # Detect GitHub Actions environment first
+        self.is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+        
         self.urls = [
             "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
             "https://dtek.karnataka.gov.in/page/Circulars/DVP/kn"
@@ -26,11 +29,13 @@ class CircularScraper:
             'Upgrade-Insecure-Requests': '1'
         }
         
-        # Setup session with improved retry strategy for slow government websites
+        # Setup session with retry strategy optimized for environment
         self.session = requests.Session()
+        # Less aggressive retries for GitHub Actions to avoid timeout
+        retry_total = 2 if self.is_github_actions else 3
         retry_strategy = Retry(
-            total=3,  # Increased to 3 for better reliability
-            backoff_factor=2,  # Back to 2 for better spacing
+            total=retry_total,
+            backoff_factor=1.5 if self.is_github_actions else 2,
             status_forcelist=[429, 500, 502, 503, 504, 520, 521, 522, 523, 524],
             allowed_methods=["HEAD", "GET", "OPTIONS"],
             raise_on_status=False  # Don't raise on HTTP errors immediately
@@ -42,7 +47,8 @@ class CircularScraper:
         
         # Execution tracking
         self.start_time = datetime.now()
-        self.max_execution_time = 300  # 5 minutes max execution time (increased from 4)
+        # Shorter timeout for GitHub Actions due to step timeout
+        self.max_execution_time = 270 if self.is_github_actions else 300  # 4.5 min for GHA, 5 min local
     
     def is_valid_circular(self, date, circular_no, description, download_link):
         """Validate if the circular entry is legitimate"""
@@ -103,12 +109,15 @@ class CircularScraper:
             print(f"Skipping {url} due to time limit")
             return []
             
-        max_attempts = 3  # Increased for government websites
+        # Fewer attempts in GitHub Actions to avoid timeout
+        max_attempts = 2 if self.is_github_actions else 3
         for attempt in range(max_attempts):
             try:
                 print(f"Attempt {attempt + 1}/{max_attempts} for {url}")
                 start_time = time.time()
-                response = self.session.get(url, timeout=60, verify=False)  # Increased to 60s for slow sites
+                # Shorter timeout for GitHub Actions
+                timeout = 45 if self.is_github_actions else 60
+                response = self.session.get(url, timeout=timeout, verify=False)
                 request_time = time.time() - start_time
                 print(f"Request completed in {request_time:.1f}s, status: {response.status_code}")
                 response.raise_for_status()
@@ -116,7 +125,8 @@ class CircularScraper:
             except requests.exceptions.Timeout:
                 print(f"Timeout on attempt {attempt + 1} for {url}")
                 if attempt < max_attempts - 1:
-                    delay = 10 * (attempt + 1)  # Progressive delay: 10s, 20s, 30s
+                    # Shorter delays in GitHub Actions
+                    delay = (5 if self.is_github_actions else 10) * (attempt + 1)
                     print(f"Waiting {delay}s before retry...")
                     time.sleep(delay)
                     continue
@@ -126,7 +136,8 @@ class CircularScraper:
             except requests.exceptions.ConnectionError as e:
                 print(f"Connection error on attempt {attempt + 1} for {url}: {e}")
                 if attempt < max_attempts - 1:
-                    delay = 10 * (attempt + 1)  # Progressive delay: 10s, 20s, 30s
+                    # Shorter delays in GitHub Actions
+                    delay = (5 if self.is_github_actions else 10) * (attempt + 1)
                     print(f"Waiting {delay}s before retry...")
                     time.sleep(delay)
                     continue
@@ -136,7 +147,8 @@ class CircularScraper:
             except Exception as e:
                 print(f"Unexpected error on attempt {attempt + 1} for {url}: {e}")
                 if attempt < max_attempts - 1:
-                    delay = 10 * (attempt + 1)  # Progressive delay: 10s, 20s, 30s
+                    # Shorter delays in GitHub Actions
+                    delay = (5 if self.is_github_actions else 10) * (attempt + 1)
                     print(f"Waiting {delay}s before retry...")
                     time.sleep(delay)
                     continue
@@ -152,7 +164,11 @@ class CircularScraper:
             # Find table rows containing circular data
             table_rows = soup.find_all('tr')
             
-            for row in table_rows[1:]:  # Skip header row
+            # Limit processing in GitHub Actions if we have many rows
+            max_rows = 100 if self.is_github_actions else len(table_rows)
+            rows_to_process = table_rows[1:max_rows+1]  # Skip header row
+            
+            for row in rows_to_process:
                 cells = row.find_all('td')
                 if len(cells) >= 3:
                     # Handle different page structures
@@ -261,7 +277,9 @@ class CircularScraper:
             circulars = self.scrape_circulars(url)
             all_circulars.extend(circulars)
             print(f"Found {len(circulars)} circulars from {url}")
-            time.sleep(3)  # Slightly increased delay between URLs
+            # Shorter delay between URLs in GitHub Actions
+            delay = 2 if self.is_github_actions else 3
+            time.sleep(delay)
         
         # Remove duplicates based on circular_no and description
         seen = set()
@@ -338,8 +356,10 @@ def main():
     signal.signal(signal.SIGTERM, signal_handler)
     signal.signal(signal.SIGINT, signal_handler)
     
-    print(f"Starting scraper with {300}s time limit...")
     scraper = CircularScraper()
+    time_limit = scraper.max_execution_time
+    env_info = "GitHub Actions" if scraper.is_github_actions else "local"
+    print(f"Starting scraper with {time_limit}s time limit ({env_info} environment)...")
     circulars = scraper.scrape_all()
     
     elapsed_time = (datetime.now() - scraper.start_time).total_seconds()
