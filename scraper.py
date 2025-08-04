@@ -7,6 +7,8 @@ import time
 import urllib3
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+import signal
+import sys
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class CircularScraper:
@@ -19,11 +21,11 @@ class CircularScraper:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
         
-        # Setup session with retry strategy
+        # Setup session with conservative retry strategy for GitHub Actions
         self.session = requests.Session()
         retry_strategy = Retry(
-            total=5,
-            backoff_factor=2,
+            total=2,  # Reduced from 5 to 2
+            backoff_factor=1,  # Reduced from 2 to 1 
             status_forcelist=[429, 500, 502, 503, 504],
             allowed_methods=["HEAD", "GET", "OPTIONS"]
         )
@@ -31,6 +33,10 @@ class CircularScraper:
         self.session.mount("http://", adapter)
         self.session.mount("https://", adapter)
         self.session.headers.update(self.headers)
+        
+        # Execution tracking
+        self.start_time = datetime.now()
+        self.max_execution_time = 240  # 4 minutes max execution time
     
     def is_valid_circular(self, date, circular_no, description, download_link):
         """Validate if the circular entry is legitimate"""
@@ -77,18 +83,31 @@ class CircularScraper:
             
         return True
         
+    def check_execution_time(self):
+        """Check if we've exceeded maximum execution time"""
+        elapsed = (datetime.now() - self.start_time).total_seconds()
+        if elapsed > self.max_execution_time:
+            print(f"Maximum execution time ({self.max_execution_time}s) exceeded. Stopping.")
+            return True
+        return False
+    
     def scrape_circulars(self, url):
-        max_attempts = 3
+        # Check execution time before starting
+        if self.check_execution_time():
+            print(f"Skipping {url} due to time limit")
+            return []
+            
+        max_attempts = 2  # Reduced from 3 to 2
         for attempt in range(max_attempts):
             try:
                 print(f"Attempt {attempt + 1}/{max_attempts} for {url}")
-                response = self.session.get(url, timeout=45, verify=False)
+                response = self.session.get(url, timeout=20, verify=False)  # Reduced from 45s to 20s
                 response.raise_for_status()
                 break
             except requests.exceptions.Timeout:
                 print(f"Timeout on attempt {attempt + 1} for {url}")
                 if attempt < max_attempts - 1:
-                    time.sleep(10 * (attempt + 1))  # Exponential backoff
+                    time.sleep(5)  # Fixed 5s delay instead of exponential
                     continue
                 else:
                     print(f"All attempts failed for {url} due to timeout")
@@ -96,7 +115,7 @@ class CircularScraper:
             except requests.exceptions.ConnectionError as e:
                 print(f"Connection error on attempt {attempt + 1} for {url}: {e}")
                 if attempt < max_attempts - 1:
-                    time.sleep(15 * (attempt + 1))  # Longer wait for connection issues
+                    time.sleep(5)  # Fixed 5s delay instead of exponential
                     continue
                 else:
                     print(f"All attempts failed for {url} due to connection error")
@@ -104,7 +123,7 @@ class CircularScraper:
             except Exception as e:
                 print(f"Unexpected error on attempt {attempt + 1} for {url}: {e}")
                 if attempt < max_attempts - 1:
-                    time.sleep(5 * (attempt + 1))
+                    time.sleep(5)  # Fixed 5s delay
                     continue
                 else:
                     print(f"All attempts failed for {url} due to unexpected error")
@@ -217,11 +236,16 @@ class CircularScraper:
         all_circulars = []
         
         for url in self.urls:
+            # Check execution time before each URL
+            if self.check_execution_time():
+                print("Stopping scraping due to time limit")
+                break
+                
             print(f"Scraping {url}...")
             circulars = self.scrape_circulars(url)
             all_circulars.extend(circulars)
             print(f"Found {len(circulars)} circulars from {url}")
-            time.sleep(5)  # Be more respectful to the server
+            time.sleep(2)  # Reduced from 5s to 2s
         
         # Remove duplicates based on circular_no and description
         seen = set()
@@ -289,9 +313,21 @@ class CircularScraper:
         
         print(f"Saved {len(circulars)} circulars to {filename}")
 
+def signal_handler(signum, frame):
+    print(f"\nReceived signal {signum}. Gracefully shutting down...")
+    sys.exit(1)
+
 def main():
+    # Set up signal handlers for graceful shutdown
+    signal.signal(signal.SIGTERM, signal_handler)
+    signal.signal(signal.SIGINT, signal_handler)
+    
+    print(f"Starting scraper with {240}s time limit...")
     scraper = CircularScraper()
     circulars = scraper.scrape_all()
+    
+    elapsed_time = (datetime.now() - scraper.start_time).total_seconds()
+    print(f"Scraping completed in {elapsed_time:.1f}s")
     
     # If no new circulars were found, try to preserve existing data
     if not circulars:
