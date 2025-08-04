@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTE Karnataka Circulars</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()" id="darkModeToggle">
+                🌙
+            </button>
+            <h1>DTE Circulars</h1>
+            <p>Latest Govt. Orders, Circulars from Board Of Technical Education</p>
+            <p style="font-size: 0.9rem; margin-top: 5px; opacity: 0.8;">(Official Website: <a href="https://dtek.karnataka.gov.in/" target="_blank" style="color: inherit; text-decoration: underline;">https://dtek.karnataka.gov.in/</a>)</p>
+            <div class="header-notice">
+                🔄 Refresh the app for recent circulars • Visit the official DTEK website for accurate results
+                <div style="font-size: 0.6rem; margin-top: 3px; opacity: 0.6;">
+                    Auto-scraped from official DTE Karnataka website
+                </div>
+            </div>
+        </div>
+
+        <div class="info" id="autoUpdateInfo">
+            <strong>🤖 Auto-Updated:</strong> Data refreshed every 30 minutes via GitHub Actions. 
+            Fresh circulars automatically scraped from DTE website - No CORS issues, reliable and fast!
+        </div>
+
+        <div class="tabs-container">
+            <div class="tabs">
+                <div class="tab active" data-category="Departmental" onclick="changeCategory('Departmental')">
+                    🏛️ Departmental
+                </div>
+                <div class="tab" data-category="DVP" onclick="changeCategory('DVP')">
+                    📋 DVP
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="refresh-btn" onclick="loadCirculars()">
+                🔄 Refresh Data
+            </button>
+            <button class="export-btn" onclick="exportToPDF()" id="exportBtn" style="display: none;">
+                📄 Export PDF
+            </button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            Loading latest circulars data...
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="success" class="success" style="display: none;"></div>
+
+        <div id="stats" class="stats" style="display: none;"></div>
+
+        <div id="circulars" class="circulars-list"></div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+            <h3>No circulars found</h3>
+            <p>The data might be updating. Please try refreshing in a few moments.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

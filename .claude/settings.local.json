@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(pip install:*)",
+      "Bash(python3 -m pip install:*)",
+      "Bash(where python)",
+      "Bash(py --version)",
+      "Bash(py -m pip install:*)",
+      "Bash(py:*)",
+      "Bash(start index.html)",
+      "Bash(explorer:*)",
+      "Bash(curl:*)",
+      "Bash(venvScripts:*)",
+      "Bash(.venvScriptsactivate)",
+      "Bash(del test_dvp.py debug_dvp.py test_scraping_separately.py)",
+      "Bash(rm:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
