@@ -39,8 +39,8 @@ class CircularScraper:
         
         # Execution tracking
         self.start_time = datetime.now()
-        # More reasonable timeout for GitHub Actions
-        self.max_execution_time = 600 if self.is_github_actions else 900  # 10 min for GHA, 15 min local
+        # Strict timeout for GitHub Actions (under 5 min limit)
+        self.max_execution_time = 240 if self.is_github_actions else 900  # 4 min for GHA, 15 min local
         
         # Initialize session pool
         self._init_sessions()
@@ -164,11 +164,12 @@ class CircularScraper:
     
     def _fetch_with_session_rotation(self, url):
         """Fetch using session rotation with different configurations"""
-        for attempt in range(5):
+        max_attempts = 3 if self.is_github_actions else 5
+        for attempt in range(max_attempts):
             session = self._get_session()
             try:
-                # Randomize timeout and delay
-                timeout = random.randint(60, 120)
+                # Shorter timeout for GitHub Actions
+                timeout = random.randint(30, 60) if self.is_github_actions else random.randint(60, 120)
                 response = session.get(url, timeout=timeout, verify=False)
                 if response.status_code == 200:
                     return response
@@ -176,8 +177,9 @@ class CircularScraper:
                     print(f"HTTP {response.status_code} on session rotation attempt {attempt+1}")
             except Exception as e:
                 print(f"Session rotation attempt {attempt+1} failed: {e}")
-                if attempt < 4:  # Don't sleep on last attempt
-                    time.sleep(random.randint(3, 8))
+                if attempt < max_attempts - 1:  # Don't sleep on last attempt
+                    sleep_time = random.randint(2, 5) if self.is_github_actions else random.randint(3, 8)
+                    time.sleep(sleep_time)
         return None
     
     def _fetch_with_different_headers(self, url):
@@ -201,7 +203,8 @@ class CircularScraper:
             try:
                 session = requests.Session()
                 session.headers.update(headers)
-                response = session.get(url, timeout=90, verify=False)
+                timeout = 60 if self.is_github_actions else 90
+                response = session.get(url, timeout=timeout, verify=False)
                 if response.status_code == 200:
                     return response
             except Exception as e:
@@ -212,7 +215,8 @@ class CircularScraper:
     def _fetch_with_basic_requests(self, url):
         """Fetch with basic requests without session"""
         try:
-            response = requests.get(url, timeout=120, verify=False)
+            timeout = 90 if self.is_github_actions else 120
+            response = requests.get(url, timeout=timeout, verify=False)
             return response
         except Exception as e:
             print(f"Basic requests failed: {e}")
@@ -359,7 +363,7 @@ class CircularScraper:
     def scrape_all(self):
         all_circulars = []
         
-        # Try parallel scraping first, fallback to sequential if needed
+        # Use parallel scraping for local, sequential for GitHub Actions (more reliable)
         if not self.is_github_actions:  # Use parallel for local development
             try:
                 print("Attempting parallel scraping...")
@@ -382,8 +386,11 @@ class CircularScraper:
             except Exception as e:
                 print(f"Parallel scraping failed: {e}, falling back to sequential")
         
-        # Sequential scraping (fallback or GitHub Actions)
-        if not all_circulars:
+        # Sequential scraping (GitHub Actions or fallback)
+        if not all_circulars or self.is_github_actions:
+            if self.is_github_actions:
+                print("Using sequential scraping for GitHub Actions reliability...")
+            
             for url in self.urls:
                 # Check execution time before each URL
                 if self.check_execution_time():
@@ -396,7 +403,8 @@ class CircularScraper:
                 
                 # Brief delay between URLs to be respectful
                 if len(self.urls) > 1:
-                    time.sleep(random.randint(2, 5))
+                    delay = random.randint(1, 3) if self.is_github_actions else random.randint(2, 5)
+                    time.sleep(delay)
         
         # Remove duplicates based on circular_no and description
         seen = set()
