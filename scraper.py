@@ -9,6 +9,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import signal
 import sys
+import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class CircularScraper:
@@ -20,35 +23,70 @@ class CircularScraper:
             "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
             "https://dtek.karnataka.gov.in/page/Circulars/DVP/kn"
         ]
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
-        }
         
-        # Setup session with retry strategy optimized for environment
-        self.session = requests.Session()
-        # Less aggressive retries for GitHub Actions to avoid timeout
-        retry_total = 2 if self.is_github_actions else 3
-        retry_strategy = Retry(
-            total=retry_total,
-            backoff_factor=1.5 if self.is_github_actions else 2,
-            status_forcelist=[429, 500, 502, 503, 504, 520, 521, 522, 523, 524],
-            allowed_methods=["HEAD", "GET", "OPTIONS"],
-            raise_on_status=False  # Don't raise on HTTP errors immediately
-        )
-        adapter = HTTPAdapter(max_retries=retry_strategy)
-        self.session.mount("http://", adapter)
-        self.session.mount("https://", adapter)
-        self.session.headers.update(self.headers)
+        # Multiple User-Agent strings for rotation
+        self.user_agents = [
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        ]
+        
+        # Session pool for parallel requests
+        self.sessions = []
+        self.lock = threading.Lock()
         
         # Execution tracking
         self.start_time = datetime.now()
-        # Shorter timeout for GitHub Actions due to step timeout
-        self.max_execution_time = 270 if self.is_github_actions else 300  # 4.5 min for GHA, 5 min local
+        # More reasonable timeout for GitHub Actions
+        self.max_execution_time = 600 if self.is_github_actions else 900  # 10 min for GHA, 15 min local
+        
+        # Initialize session pool
+        self._init_sessions()
+    
+    def _init_sessions(self):
+        """Initialize multiple sessions with different configurations"""
+        for i in range(3):  # Create 3 different sessions
+            session = requests.Session()
+            
+            # Rotate user agents
+            headers = {
+                'User-Agent': random.choice(self.user_agents),
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+                'Cache-Control': 'no-cache',
+                'Pragma': 'no-cache'
+            }
+            
+            # Different retry strategies for each session
+            retry_strategy = Retry(
+                total=5,
+                backoff_factor=1 + (i * 0.5),  # Different backoff for each session
+                status_forcelist=[429, 500, 502, 503, 504, 520, 521, 522, 523, 524],
+                allowed_methods=["HEAD", "GET", "OPTIONS"],
+                raise_on_status=False
+            )
+            
+            adapter = HTTPAdapter(
+                max_retries=retry_strategy,
+                pool_connections=20,
+                pool_maxsize=20
+            )
+            
+            session.mount("http://", adapter)
+            session.mount("https://", adapter)
+            session.headers.update(headers)
+            
+            self.sessions.append(session)
+    
+    def _get_session(self):
+        """Get a random session from the pool"""
+        with self.lock:
+            return random.choice(self.sessions)
     
     def is_valid_circular(self, date, circular_no, description, download_link):
         """Validate if the circular entry is legitimate"""
@@ -103,58 +141,95 @@ class CircularScraper:
             return True
         return False
     
+    def _fetch_with_multiple_strategies(self, url):
+        """Try multiple strategies to fetch the URL"""
+        strategies = [
+            self._fetch_with_session_rotation,
+            self._fetch_with_different_headers,
+            self._fetch_with_basic_requests
+        ]
+        
+        for i, strategy in enumerate(strategies):
+            try:
+                print(f"Trying strategy {i+1} for {url}")
+                response = strategy(url)
+                if response and response.status_code == 200:
+                    print(f"Strategy {i+1} successful")
+                    return response
+            except Exception as e:
+                print(f"Strategy {i+1} failed: {e}")
+                continue
+        
+        return None
+    
+    def _fetch_with_session_rotation(self, url):
+        """Fetch using session rotation with different configurations"""
+        for attempt in range(5):
+            session = self._get_session()
+            try:
+                # Randomize timeout and delay
+                timeout = random.randint(60, 120)
+                response = session.get(url, timeout=timeout, verify=False)
+                if response.status_code == 200:
+                    return response
+                else:
+                    print(f"HTTP {response.status_code} on session rotation attempt {attempt+1}")
+            except Exception as e:
+                print(f"Session rotation attempt {attempt+1} failed: {e}")
+                if attempt < 4:  # Don't sleep on last attempt
+                    time.sleep(random.randint(3, 8))
+        return None
+    
+    def _fetch_with_different_headers(self, url):
+        """Fetch with completely different headers"""
+        headers_variations = [
+            {
+                'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            },
+            {
+                'User-Agent': 'curl/7.68.0',
+                'Accept': '*/*',
+            },
+            {
+                'User-Agent': 'Python-requests/2.28.1',
+                'Accept': 'text/html',
+            }
+        ]
+        
+        for headers in headers_variations:
+            try:
+                session = requests.Session()
+                session.headers.update(headers)
+                response = session.get(url, timeout=90, verify=False)
+                if response.status_code == 200:
+                    return response
+            except Exception as e:
+                print(f"Different headers attempt failed: {e}")
+                continue
+        return None
+    
+    def _fetch_with_basic_requests(self, url):
+        """Fetch with basic requests without session"""
+        try:
+            response = requests.get(url, timeout=120, verify=False)
+            return response
+        except Exception as e:
+            print(f"Basic requests failed: {e}")
+            return None
+    
     def scrape_circulars(self, url):
         # Check execution time before starting
         if self.check_execution_time():
             print(f"Skipping {url} due to time limit")
             return []
-            
-        # Fewer attempts in GitHub Actions to avoid timeout
-        max_attempts = 2 if self.is_github_actions else 3
-        for attempt in range(max_attempts):
-            try:
-                print(f"Attempt {attempt + 1}/{max_attempts} for {url}")
-                start_time = time.time()
-                # Shorter timeout for GitHub Actions
-                timeout = 45 if self.is_github_actions else 60
-                response = self.session.get(url, timeout=timeout, verify=False)
-                request_time = time.time() - start_time
-                print(f"Request completed in {request_time:.1f}s, status: {response.status_code}")
-                response.raise_for_status()
-                break
-            except requests.exceptions.Timeout:
-                print(f"Timeout on attempt {attempt + 1} for {url}")
-                if attempt < max_attempts - 1:
-                    # Shorter delays in GitHub Actions
-                    delay = (5 if self.is_github_actions else 10) * (attempt + 1)
-                    print(f"Waiting {delay}s before retry...")
-                    time.sleep(delay)
-                    continue
-                else:
-                    print(f"All attempts failed for {url} due to timeout")
-                    return []
-            except requests.exceptions.ConnectionError as e:
-                print(f"Connection error on attempt {attempt + 1} for {url}: {e}")
-                if attempt < max_attempts - 1:
-                    # Shorter delays in GitHub Actions
-                    delay = (5 if self.is_github_actions else 10) * (attempt + 1)
-                    print(f"Waiting {delay}s before retry...")
-                    time.sleep(delay)
-                    continue
-                else:
-                    print(f"All attempts failed for {url} due to connection error")
-                    return []
-            except Exception as e:
-                print(f"Unexpected error on attempt {attempt + 1} for {url}: {e}")
-                if attempt < max_attempts - 1:
-                    # Shorter delays in GitHub Actions
-                    delay = (5 if self.is_github_actions else 10) * (attempt + 1)
-                    print(f"Waiting {delay}s before retry...")
-                    time.sleep(delay)
-                    continue
-                else:
-                    print(f"All attempts failed for {url} due to unexpected error")
-                    return []
+        
+        print(f"Scraping {url}...")
+        response = self._fetch_with_multiple_strategies(url)
+        
+        if not response:
+            print(f"All fetch strategies failed for {url}")
+            return []
         
         try:
             print(f"Parsing response content ({len(response.content)} bytes)")
@@ -173,28 +248,45 @@ class CircularScraper:
                 if len(cells) >= 3:
                     # Handle different page structures
                     if "DVP" in url:
-                        # DVP page has a specific 5-column structure: Serial, Date, Circular_No, Description, Download_Link
-                        if len(cells) >= 5:
+                        # DVP page has a flexible structure, typically 4-5 columns
+                        if len(cells) >= 4:
                             try:
                                 serial = cells[0].get_text(strip=True) if cells[0] else ""
                                 date = cells[1].get_text(strip=True) if cells[1] else ""
-                                circular_no = cells[2].get_text(strip=True) if cells[2] else ""
-                                description = cells[2].get_text(strip=True) if cells[2] else ""  # Description is in cell 2 for DVP
                                 
-                                # DVP rows typically have meaningful content in all cells
+                                # For DVP pages, circular_no might be in cells[2] and description in cells[3]
+                                # Or description might span cells[2] and cells[3]
+                                circular_no = cells[2].get_text(strip=True) if cells[2] else ""
+                                
+                                # Try to get description from the most likely cell
+                                if len(cells) >= 4:
+                                    description = cells[3].get_text(strip=True) if cells[3] else ""
+                                    # If description is empty or very short, try combining cells[2] and cells[3]
+                                    if len(description) < 10 and circular_no:
+                                        description = f"{circular_no} {description}".strip()
+                                        circular_no = ""  # Clear circular_no if we combined it with description
+                                else:
+                                    description = circular_no
+                                    circular_no = ""
+                                
                                 # Skip header rows and empty rows
-                                if (len(description) > 15 and  # DVP descriptions are longer
-                                    not serial.lower() in ['sl', 'serial', 'ಕ್ರಮ', 'ಕ್ರಮಾಂಕ'] and
+                                if (len(description) > 10 and  # Reasonable description length
+                                    not serial.lower() in ['sl', 'serial', 'ಕ್ರಮ', 'ಕ್ರಮಾಂಕ', 'no', 'sno'] and
                                     not date.lower() in ['date', 'ದಿನಾಂಕ'] and
-                                    len(date) > 5):  # DVP dates are longer
+                                    len(date) > 4):  # Valid date length
                                     pass  # This is a valid DVP row
                                 else:
                                     continue  # Skip invalid rows
                             except:
                                 continue
                         else:
-                            # If less than 5 columns, skip (DVP always has 5 columns)
-                            continue
+                            # If less than 4 columns, try to extract what we can
+                            if len(cells) >= 3:
+                                date = cells[0].get_text(strip=True) if cells[0] else ""
+                                circular_no = cells[1].get_text(strip=True) if cells[1] else ""
+                                description = cells[2].get_text(strip=True) if cells[2] else ""
+                            else:
+                                continue
                     else:
                         # Departmental page format
                         date = cells[0].get_text(strip=True) if cells[0] else ""
@@ -267,19 +359,44 @@ class CircularScraper:
     def scrape_all(self):
         all_circulars = []
         
-        for url in self.urls:
-            # Check execution time before each URL
-            if self.check_execution_time():
-                print("Stopping scraping due to time limit")
-                break
+        # Try parallel scraping first, fallback to sequential if needed
+        if not self.is_github_actions:  # Use parallel for local development
+            try:
+                print("Attempting parallel scraping...")
+                with ThreadPoolExecutor(max_workers=2) as executor:
+                    future_to_url = {executor.submit(self.scrape_circulars, url): url for url in self.urls}
+                    
+                    for future in as_completed(future_to_url, timeout=300):  # 5 min timeout
+                        url = future_to_url[future]
+                        try:
+                            circulars = future.result()
+                            all_circulars.extend(circulars)
+                            print(f"Found {len(circulars)} circulars from {url}")
+                        except Exception as e:
+                            print(f"Parallel scraping failed for {url}: {e}")
+                            
+                if all_circulars:
+                    print(f"Parallel scraping successful, found {len(all_circulars)} total circulars")
+                else:
+                    print("Parallel scraping found no results, falling back to sequential")
+            except Exception as e:
+                print(f"Parallel scraping failed: {e}, falling back to sequential")
+        
+        # Sequential scraping (fallback or GitHub Actions)
+        if not all_circulars:
+            for url in self.urls:
+                # Check execution time before each URL
+                if self.check_execution_time():
+                    print("Stopping scraping due to time limit")
+                    break
+                    
+                circulars = self.scrape_circulars(url)
+                all_circulars.extend(circulars)
+                print(f"Found {len(circulars)} circulars from {url}")
                 
-            print(f"Scraping {url}...")
-            circulars = self.scrape_circulars(url)
-            all_circulars.extend(circulars)
-            print(f"Found {len(circulars)} circulars from {url}")
-            # Shorter delay between URLs in GitHub Actions
-            delay = 2 if self.is_github_actions else 3
-            time.sleep(delay)
+                # Brief delay between URLs to be respectful
+                if len(self.urls) > 1:
+                    time.sleep(random.randint(2, 5))
         
         # Remove duplicates based on circular_no and description
         seen = set()
@@ -290,6 +407,7 @@ class CircularScraper:
                 seen.add(key)
                 unique_circulars.append(circular)
         
+        print(f"Total unique circulars after deduplication: {len(unique_circulars)}")
         return unique_circulars
     
     def load_existing_data(self, filename='circulars.json'):
@@ -303,8 +421,26 @@ class CircularScraper:
             print(f"Error loading existing data: {e}")
         return []
     
+    def merge_with_existing_data(self, new_circulars, filename='circulars.json'):
+        """Merge new circulars with existing data and return combined list"""
+        existing_circulars = self.load_existing_data(filename)
+        
+        # Combine new and existing circulars
+        all_circulars = new_circulars + existing_circulars
+        
+        # Remove duplicates based on circular_no and description
+        seen = set()
+        unique_circulars = []
+        for circular in all_circulars:
+            key = (circular.get('circular_no', ''), circular.get('description', ''))
+            if key not in seen and key != ('', ''):
+                seen.add(key)
+                unique_circulars.append(circular)
+        
+        print(f"Merged {len(new_circulars)} new + {len(existing_circulars)} existing = {len(unique_circulars)} unique circulars")
+        return unique_circulars
+    
     def save_to_json(self, circulars, filename='circulars.json'):
-        # Sort by date (newest first) and limit to 50 most recent
         def parse_date(date_str):
             try:
                 # Handle various date formats
@@ -330,22 +466,46 @@ class CircularScraper:
             except:
                 return datetime(1900, 1, 1)
         
-        # Sort by parsed date, newest first
-        circulars.sort(key=lambda x: parse_date(x['date']), reverse=True)
+        # Merge with existing data first
+        all_circulars = self.merge_with_existing_data(circulars, filename)
         
-        # Limit to last 50 circulars
-        circulars = circulars[:50]
+        # Sort by parsed date, newest first
+        all_circulars.sort(key=lambda x: parse_date(x['date']), reverse=True)
+        
+        # Ensure balanced representation from both sources
+        dept_circulars = [c for c in all_circulars if 'Departmental' in c['source_url']]
+        dvp_circulars = [c for c in all_circulars if 'DVP' in c['source_url']]
+        
+        # Take top 75 from each source to ensure representation
+        selected_circulars = dept_circulars[:75] + dvp_circulars[:75]
+        
+        # Sort combined selection by date again
+        selected_circulars.sort(key=lambda x: parse_date(x['date']), reverse=True)
+        
+        # Take top 150 total, but this ensures we have mix from both sources
+        final_circulars = selected_circulars[:150]
+        
+        # Count by source for reporting
+        final_dept_count = sum(1 for c in final_circulars if 'Departmental' in c['source_url'])
+        final_dvp_count = sum(1 for c in final_circulars if 'DVP' in c['source_url'])
         
         data = {
             'last_updated': datetime.now().isoformat(),
-            'total_circulars': len(circulars),
-            'circulars': circulars
+            'total_circulars': len(final_circulars),
+            'circulars': final_circulars,
+            'scraping_status': 'success' if circulars else 'partial',
+            'source_breakdown': {
+                'departmental': final_dept_count,
+                'dvp': final_dvp_count
+            }
         }
         
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         
-        print(f"Saved {len(circulars)} circulars to {filename}")
+        print(f"Saved {len(final_circulars)} total circulars to {filename}")
+        print(f"  - Departmental: {final_dept_count}")
+        print(f"  - DVP: {final_dvp_count}")
 
 def signal_handler(signum, frame):
     print(f"\nReceived signal {signum}. Gracefully shutting down...")
@@ -359,33 +519,38 @@ def main():
     scraper = CircularScraper()
     time_limit = scraper.max_execution_time
     env_info = "GitHub Actions" if scraper.is_github_actions else "local"
-    print(f"Starting scraper with {time_limit}s time limit ({env_info} environment)...")
+    print(f"Starting enhanced scraper with {time_limit}s time limit ({env_info} environment)...")
+    
+    # Try scraping
     circulars = scraper.scrape_all()
     
     elapsed_time = (datetime.now() - scraper.start_time).total_seconds()
     print(f"Scraping completed in {elapsed_time:.1f}s")
     
-    # If no new circulars were found, try to preserve existing data
-    if not circulars:
-        print("No new circulars found. Checking for existing data...")
+    # Always save, even if we got partial results
+    if circulars:
+        print(f"Successfully scraped {len(circulars)} new circulars")
+        scraper.save_to_json(circulars)
+    else:
+        print("No new circulars found this run.")
+        # Still try to merge with existing and update timestamp
         existing_circulars = scraper.load_existing_data()
         if existing_circulars:
-            print(f"Preserving {len(existing_circulars)} existing circulars")
-            # Update timestamp but keep existing data
+            print(f"Maintaining {len(existing_circulars)} existing circulars")
+            scraper.save_to_json([])  # This will merge with existing
+        else:
+            print("No existing data found either. Creating minimal file.")
             data = {
                 'last_updated': datetime.now().isoformat(),
-                'total_circulars': len(existing_circulars),
-                'circulars': existing_circulars,
-                'note': 'Scraping failed - preserved existing data'
+                'total_circulars': 0,
+                'circulars': [],
+                'scraping_status': 'failed',
+                'note': 'All scraping attempts failed'
             }
             with open('circulars.json', 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"Preserved existing data with {len(existing_circulars)} circulars")
-            return
-        else:
-            print("No existing data found. Creating empty file.")
     
-    scraper.save_to_json(circulars)
+    print("Scraper execution completed.")
 
 if __name__ == "__main__":
     main()
