@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-04T15:22:59.477887",
+  "last_updated": "2025-08-04T09:58:28.478403",
   "total_circulars": 50,
   "circulars": [
     {
@@ -402,5 +402,6 @@
       "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
       "scraped_at": "2025-08-04T15:22:54.336461"
     }
-  ]
+  ],
+  "note": "Scraping failed - preserved existing data"
 }
