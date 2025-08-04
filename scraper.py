@@ -5,6 +5,8 @@ import os
 from datetime import datetime
 import time
 import urllib3
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class CircularScraper:
@@ -16,6 +18,19 @@ class CircularScraper:
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
+        
+        # Setup session with retry strategy
+        self.session = requests.Session()
+        retry_strategy = Retry(
+            total=5,
+            backoff_factor=2,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=["HEAD", "GET", "OPTIONS"]
+        )
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        self.session.mount("http://", adapter)
+        self.session.mount("https://", adapter)
+        self.session.headers.update(self.headers)
     
     def is_valid_circular(self, date, circular_no, description, download_link):
         """Validate if the circular entry is legitimate"""
@@ -63,9 +78,39 @@ class CircularScraper:
         return True
         
     def scrape_circulars(self, url):
+        max_attempts = 3
+        for attempt in range(max_attempts):
+            try:
+                print(f"Attempt {attempt + 1}/{max_attempts} for {url}")
+                response = self.session.get(url, timeout=45, verify=False)
+                response.raise_for_status()
+                break
+            except requests.exceptions.Timeout:
+                print(f"Timeout on attempt {attempt + 1} for {url}")
+                if attempt < max_attempts - 1:
+                    time.sleep(10 * (attempt + 1))  # Exponential backoff
+                    continue
+                else:
+                    print(f"All attempts failed for {url} due to timeout")
+                    return []
+            except requests.exceptions.ConnectionError as e:
+                print(f"Connection error on attempt {attempt + 1} for {url}: {e}")
+                if attempt < max_attempts - 1:
+                    time.sleep(15 * (attempt + 1))  # Longer wait for connection issues
+                    continue
+                else:
+                    print(f"All attempts failed for {url} due to connection error")
+                    return []
+            except Exception as e:
+                print(f"Unexpected error on attempt {attempt + 1} for {url}: {e}")
+                if attempt < max_attempts - 1:
+                    time.sleep(5 * (attempt + 1))
+                    continue
+                else:
+                    print(f"All attempts failed for {url} due to unexpected error")
+                    return []
+        
         try:
-            response = requests.get(url, headers=self.headers, timeout=30, verify=False)
-            response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
             circulars = []
@@ -175,7 +220,8 @@ class CircularScraper:
             print(f"Scraping {url}...")
             circulars = self.scrape_circulars(url)
             all_circulars.extend(circulars)
-            time.sleep(2)  # Be respectful to the server
+            print(f"Found {len(circulars)} circulars from {url}")
+            time.sleep(5)  # Be more respectful to the server
         
         # Remove duplicates based on circular_no and description
         seen = set()
@@ -187,6 +233,17 @@ class CircularScraper:
                 unique_circulars.append(circular)
         
         return unique_circulars
+    
+    def load_existing_data(self, filename='circulars.json'):
+        """Load existing circulars data if available"""
+        try:
+            if os.path.exists(filename):
+                with open(filename, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    return data.get('circulars', [])
+        except Exception as e:
+            print(f"Error loading existing data: {e}")
+        return []
     
     def save_to_json(self, circulars, filename='circulars.json'):
         # Sort by date (newest first) and limit to 50 most recent
@@ -235,6 +292,27 @@ class CircularScraper:
 def main():
     scraper = CircularScraper()
     circulars = scraper.scrape_all()
+    
+    # If no new circulars were found, try to preserve existing data
+    if not circulars:
+        print("No new circulars found. Checking for existing data...")
+        existing_circulars = scraper.load_existing_data()
+        if existing_circulars:
+            print(f"Preserving {len(existing_circulars)} existing circulars")
+            # Update timestamp but keep existing data
+            data = {
+                'last_updated': datetime.now().isoformat(),
+                'total_circulars': len(existing_circulars),
+                'circulars': existing_circulars,
+                'note': 'Scraping failed - preserved existing data'
+            }
+            with open('circulars.json', 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"Preserved existing data with {len(existing_circulars)} circulars")
+            return
+        else:
+            print("No existing data found. Creating empty file.")
+    
     scraper.save_to_json(circulars)
 
 if __name__ == "__main__":
