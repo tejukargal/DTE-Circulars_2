@@ -18,16 +18,22 @@ class CircularScraper:
             "https://dtek.karnataka.gov.in/page/Circulars/DVP/kn"
         ]
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1'
         }
         
-        # Setup session with conservative retry strategy for GitHub Actions
+        # Setup session with improved retry strategy for slow government websites
         self.session = requests.Session()
         retry_strategy = Retry(
-            total=2,  # Reduced from 5 to 2
-            backoff_factor=1,  # Reduced from 2 to 1 
-            status_forcelist=[429, 500, 502, 503, 504],
-            allowed_methods=["HEAD", "GET", "OPTIONS"]
+            total=3,  # Increased to 3 for better reliability
+            backoff_factor=2,  # Back to 2 for better spacing
+            status_forcelist=[429, 500, 502, 503, 504, 520, 521, 522, 523, 524],
+            allowed_methods=["HEAD", "GET", "OPTIONS"],
+            raise_on_status=False  # Don't raise on HTTP errors immediately
         )
         adapter = HTTPAdapter(max_retries=retry_strategy)
         self.session.mount("http://", adapter)
@@ -36,7 +42,7 @@ class CircularScraper:
         
         # Execution tracking
         self.start_time = datetime.now()
-        self.max_execution_time = 240  # 4 minutes max execution time
+        self.max_execution_time = 300  # 5 minutes max execution time (increased from 4)
     
     def is_valid_circular(self, date, circular_no, description, download_link):
         """Validate if the circular entry is legitimate"""
@@ -97,17 +103,22 @@ class CircularScraper:
             print(f"Skipping {url} due to time limit")
             return []
             
-        max_attempts = 2  # Reduced from 3 to 2
+        max_attempts = 3  # Increased for government websites
         for attempt in range(max_attempts):
             try:
                 print(f"Attempt {attempt + 1}/{max_attempts} for {url}")
-                response = self.session.get(url, timeout=20, verify=False)  # Reduced from 45s to 20s
+                start_time = time.time()
+                response = self.session.get(url, timeout=60, verify=False)  # Increased to 60s for slow sites
+                request_time = time.time() - start_time
+                print(f"Request completed in {request_time:.1f}s, status: {response.status_code}")
                 response.raise_for_status()
                 break
             except requests.exceptions.Timeout:
                 print(f"Timeout on attempt {attempt + 1} for {url}")
                 if attempt < max_attempts - 1:
-                    time.sleep(5)  # Fixed 5s delay instead of exponential
+                    delay = 10 * (attempt + 1)  # Progressive delay: 10s, 20s, 30s
+                    print(f"Waiting {delay}s before retry...")
+                    time.sleep(delay)
                     continue
                 else:
                     print(f"All attempts failed for {url} due to timeout")
@@ -115,7 +126,9 @@ class CircularScraper:
             except requests.exceptions.ConnectionError as e:
                 print(f"Connection error on attempt {attempt + 1} for {url}: {e}")
                 if attempt < max_attempts - 1:
-                    time.sleep(5)  # Fixed 5s delay instead of exponential
+                    delay = 10 * (attempt + 1)  # Progressive delay: 10s, 20s, 30s
+                    print(f"Waiting {delay}s before retry...")
+                    time.sleep(delay)
                     continue
                 else:
                     print(f"All attempts failed for {url} due to connection error")
@@ -123,14 +136,16 @@ class CircularScraper:
             except Exception as e:
                 print(f"Unexpected error on attempt {attempt + 1} for {url}: {e}")
                 if attempt < max_attempts - 1:
-                    time.sleep(5)  # Fixed 5s delay
+                    delay = 10 * (attempt + 1)  # Progressive delay: 10s, 20s, 30s
+                    print(f"Waiting {delay}s before retry...")
+                    time.sleep(delay)
                     continue
                 else:
                     print(f"All attempts failed for {url} due to unexpected error")
                     return []
         
         try:
-            
+            print(f"Parsing response content ({len(response.content)} bytes)")
             soup = BeautifulSoup(response.content, 'html.parser')
             circulars = []
             
@@ -226,6 +241,7 @@ class CircularScraper:
                             'scraped_at': datetime.now().isoformat()
                         })
             
+            print(f"Successfully extracted {len(circulars)} valid circulars")
             return circulars
             
         except Exception as e:
@@ -245,7 +261,7 @@ class CircularScraper:
             circulars = self.scrape_circulars(url)
             all_circulars.extend(circulars)
             print(f"Found {len(circulars)} circulars from {url}")
-            time.sleep(2)  # Reduced from 5s to 2s
+            time.sleep(3)  # Slightly increased delay between URLs
         
         # Remove duplicates based on circular_no and description
         seen = set()
@@ -322,7 +338,7 @@ def main():
     signal.signal(signal.SIGTERM, signal_handler)
     signal.signal(signal.SIGINT, signal_handler)
     
-    print(f"Starting scraper with {240}s time limit...")
+    print(f"Starting scraper with {300}s time limit...")
     scraper = CircularScraper()
     circulars = scraper.scrape_all()
     
