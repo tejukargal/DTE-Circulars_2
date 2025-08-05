@@ -98,10 +98,11 @@ class CircularScraper:
         return False
     
     def fetch_url(self, url):
-        """Simple, fast URL fetching with minimal retries"""
+        """Enhanced URL fetching with better timeout handling"""
         try:
-            timeout = 45 if self.is_github_actions else 60
-            response = self.session.get(url, timeout=timeout, verify=False)
+            # Use tuple format for separate connect/read timeouts
+            timeout = (15, 90) if self.is_github_actions else (20, 120)  # (connect, read)
+            response = self.session.get(url, timeout=timeout, verify=False, allow_redirects=True)
             if response.status_code == 200:
                 return response
             else:
@@ -276,8 +277,18 @@ class CircularScraper:
         # Sort by parsed date, newest first
         all_circulars.sort(key=lambda x: parse_date(x['date']), reverse=True)
         
-        # Keep top 100 circulars for speed
-        final_circulars = all_circulars[:100]
+        # Ensure balanced representation from both sources
+        dept_circulars = [c for c in all_circulars if 'Departmental' in c['source_url']]
+        dvp_circulars = [c for c in all_circulars if 'DVP' in c['source_url']]
+        
+        # Take top 200 from each source to ensure representation
+        selected_circulars = dept_circulars[:200] + dvp_circulars[:200]
+        
+        # Sort combined selection by date again
+        selected_circulars.sort(key=lambda x: parse_date(x['date']), reverse=True)
+        
+        # Take top 400 total, but this ensures we have mix from both sources
+        final_circulars = selected_circulars[:400]
         
         # Count by source for reporting
         final_dept_count = sum(1 for c in final_circulars if 'Departmental' in c['source_url'])
