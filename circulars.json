@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-05T14:14:04.013475",
+  "last_updated": "2025-08-05T08:46:06.480394",
   "total_circulars": 98,
   "circulars": [
     {
@@ -787,7 +787,7 @@
       "scraped_at": "2025-08-05T14:13:59.077253"
     }
   ],
-  "scraping_status": "success",
+  "scraping_status": "partial",
   "source_breakdown": {
     "departmental": 98,
     "dvp": 0
