@@ -1,7 +1,795 @@
 {
-  "last_updated": "2025-08-05T08:40:56.759550",
-  "total_circulars": 0,
-  "circulars": [],
-  "scraping_status": "failed",
-  "note": "All scraping attempts failed"
+  "last_updated": "2025-08-05T14:14:04.013475",
+  "total_circulars": 98,
+  "circulars": [
+    {
+      "date": "04-08-2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್1/13/2025",
+      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಮೆಟ್ರಿಕ್ ನಂತರದ ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶದ ಆನ್‌ಲೈನ್ ಮುಖಾಂತರ ಪರಿಶಿಷ್ಟ ಪಂಗಡದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶುಲ್ಕ ಮರುಪಾವತಿ ಮತ್ತು ರಕ್ಷಣಾದಳದ ಸಿಬ್ಬಂದಿಯ ಮಕ್ಕಳಿಗೆ/ಆಶ್ರಿತರಿಗೆ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಅಹ್ವಾನಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/CircularforSTandDefenceScholarshipfortheyear202526.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "04-08-2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್1/12/2025",
+      "description": "ಸಮಾಜ ಕಲ್ಯಾಣ ಇಲಾಖೆಯಿಂದ ಅನುಷ್ಠಾನ ಮಾಡಲಾಗುತ್ತಿರುವ ಕೇಂದ್ರ ಪುರಸ್ಕೃತ ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ ಕಾರ್ಯಕ್ರಮ ಸಂಬಂಧ ಎಲ್ಲಾ ಕಾಲೇಜುಗಳ Empowerment officer ಮತ್ತು ಅರ್ಹ  ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು Biometric Authentication ಪ್ರಕ್ರಿಯೆಗೆ ಒಳಪಡಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/CircularforBiometricAuthenticationforStudentsandEmpowermentofficer.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "04-08-2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ(4)/23/2025",
+      "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಖಾಲಿಯಿರುವ ಪ್ರಾಂಶುಪಾಲರ ಹುದ್ದೆಗಳನ್ನು ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಭರ್ತಿ ಮಾಡುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/EST2.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "01-08-2025",
+      "circular_no": "ಡಿಟಿಇ/ಎನ್‌ಎಸ್‌ಎಸ್/01/ಐಡಿಪಿ/2025-26",
+      "description": "ನಶಾ ಮುಕ್ತ ಭಾರತ ಅಭಿಯಾನವನ್ನು ಹಮ್ಮಿಕೊಳ್ಳುವ ಬಗ್ಗೆ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/NSS/ನಶಮುಕ್ತಭಾರತ25.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "01-08-2025",
+      "circular_no": "ಡಿಟಿಇ/26/ಇಎಸ್‌ಟಿ(10)/2025",
+      "description": "ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ವ್ಯಾಪ್ತಿಯಲ್ಲಿನ ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಉಪನ್ಯಾಸಕರುಗಳಿಗೆ ವೃತ್ತಿಪದೋನ್ನತೆ ನೀಡುವ ಬಗ್ಗೆ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/Circular.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "01-08-2025",
+      "circular_no": "ಡಿಟಿಇ/16/ಇಎಸ್‌ಟಿ(3)/2025",
+      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿಗೆ ಅತಿಥಿ ಉಪನ್ಯಾಸಕರನ್ನು ಕೌನ್ಸಲಿಂಗ್ ಮುಖಾಂತರ ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/GuestFaculty.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "31/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025ರ Makeup ಪರೀಕ್ಷೆಯ (SEE) ಉತ್ತರ ಪತ್ರಿಕೆಗಳ ಮೌಲ್ಯಮಾಪನ ಕಾರ್ಯಕ್ಕೆ ಉಪನ್ಯಾಸಕರುಗಳನ್ನು ಬಿಡುಗಡೆ ಮಾಡುವ ಬಗ್ಗೆ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/RelieveValuersforMakeup25.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "30-07-2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ(10)/6/2024",
+      "description": "ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ವ್ಯಾಪ್ತಿಯಲ್ಲಿನ ಸರ್ಕಾರಿ ಇಂಜಿನಿಯರಿಂಗ್ ಕಾಲೇಜುಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ  ಅಧ್ಯಾಪಕರುಗಳಿಗೆ 7ನೇ ಎಐಸಿಟಿಇ ವೇತನ ಶ್ರೇಣಿಯಲ್ಲಿ ಪದೋನ್ನತಿ ನೀಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/document.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "30/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ(7)/79/2025",
+      "description": "ಸಕಾಲ ತರಬೇತಿ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ 'ಎ' ಮತ್ತು  'ಬಿ' ವೃಂದದ 10 ಅಧಿಕಾರಿಗಳನ್ನು ನಿಯೋಜಿಸುವ ಕುರಿತು",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/EST7.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "29/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ(4)/8/2024",
+      "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳ ಪ್ರಾಂಶುಪಾಲರು ವೃಂದದ ದಿನಾಂಕ:01-01-2023 ರಿಂದ 31-12-2023 ಅವಧಿಗೆ ದಿನಾಂಕ:01-01-2024ರಲ್ಲಿದ್ದಂತೆ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿಯನ್ನು ಪ್ರಕಟಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/PPlList.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "29/07/2025",
+      "circular_no": "ಡಿಟಿಇ/16/ಇಎಸ್‌ಟಿ(3)/2025",
+      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಅತಿಥಿ ಉಪನ್ಯಾಸಕರನ್ನು ಮುಂದುವರೆಸುವ (Retain List) ತಾತ್ಕಲಿಕ ಪಟ್ಟಿ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/guestfacultyretainlist.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "29/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025 ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/DDOcode.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "28/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025ರ ಡಿಪ್ಲೋಮಾ Makeup ಪರೀಕ್ಷೆಯ (SEE) ಉತ್ತರ ಪತ್ರಿಕೆಗಳ ಮೌಲ್ಯಮಾಪನಮೌಲ್ಯಮಾಪನ ಕಾರ್ಯವನ್ನು ಬೆಂಗಳೂರು ನೋಡೆಲ್‌ ಮೌಲ್ಯಮಾಪನ ಕೇಂದ್ರದಲ್ಲಿ ಜರುಗಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/Makeup2025valuationmemo.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "28/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಪರೀಕ್ಷೆ೦ಇಸಿಎಸ್‌3/29/2025",
+      "description": "ಕರ್ನಾಟಕ ಶಾಲಾ ಪರೀಕ್ಷೆ ಮತ್ತು ಮೌಲ್ಯ ನಿರ್ಣಯ ಮಂಡಳಿಯು 2025ರ ಜುಲೈ ಮಾಹೆಯಲ್ಲಿ ಗಣಕಯಂತ್ರ ಶಿಕ್ಷಣ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಲು ಇಲಾಖೆಯ ಸರ್ಕಾರಿ/ಖಾಸಗಿ ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಲ್ಲಿ ಕರ್ತವ್ಯ ನಿರ್ವಹಿಸುತ್ತಿರುವ ಕಂಪ್ಯೂಟರ್‌ ಸೈನ್ಸ್‌ ಉಪನ್ಯಾಸಕರನ್ನು ನಿಯೋಜಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/Scan_0002_1.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "25/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025ರ ಡಿಪ್ಲೋಮಾ Makeup ಪರೀಕ್ಷೆಯ (SEE) ಬೆಂಗಳೂರು ನೋಡಲ್‌ ಮೌಲ್ಯಮಾಪನ ಕೇಂದ್ರದಲ್ಲಿ ಸಂಬಂಧಪಟ್ಟ ಪರೀಕ್ಷಕರ ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರು/ಸದಸ್ಯರುಗಳನ್ನು ಮೇಲ್ವಚಾರಕರುಗಳನ್ನಾಗಿ ನೇಮಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/July2025makeupcampSupervisor.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "25/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025ರ ಡಿಪ್ಲೋಮಾ Makeup ಥಿಯರಿ ಪರೀಕ್ಷೆಯ ಉತ್ತರ ಪತ್ರಿಕೆಗಳ ಮೌಲ್ಯಮಾಪನ ಕೇಂದ್ರದಲ್ಲಿ ಮೌಲ್ಯಮಾಪಕರು ನಿರ್ವಹಿಸಬೇಕಾದ ಕರ್ತವ್ಯಗಳು ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/July2025makeupDutiesofValuer's.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.071247"
+    },
+    {
+      "date": "25/07/2025",
+      "circular_no": "ಡಿಟಿಇ/ಎಡಿಎಂಐ೦/ಇಎಸ್‌ ಟಿ(7)/139/2025",
+      "description": "ಹೊಸದಾಗಿ ಪ್ರಾರಂಭವಾಗುತ್ತಿರುವ ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌, ಅರಸೀಕೆರೆ, ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌, ಕೊಲ್ಹಾರ ಮತ್ತು ಸರ್ಕಾರಿ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜು, ಅರಸೀಕೆರೆ ಸಂಸ್ಥೆಗಳಿಗೆ ಸಿಬ್ಬಂದಿಗಳನ್ನು ಅನ್ಯ ಕಾರ್ಯ ನಿಮಿತ್ತ ನಿಯೋಜಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/ArasikereDeputation.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "25/07/2025",
+      "circular_no": "ಡಿಟಿಇ/16/ಇಎಸ್‌ಟಿ(3)/2025",
+      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿಗೆ ಅತಿಥಿ ಉಪನ್ಯಾಸಕರನ್ನು ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/document.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "22/07/2025",
+      "circular_no": "ಡಿಟಿಇ/39/ಸಿಡಿಸಿ(1)/2024",
+      "description": "ಸರ್ಕಾರಿ/ಅನುದಾನಿತ/ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಸಿ-25 ಪಠ್ಯಕ್ರಮವನ್ನು ಜಾರಿಗೊಳಿಸುವ ಸಂಬಂಧ ಅನುಸರಿಸಬೇಕಾಗಿರುವ/ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳ ಬಗ್ಗೆ Video Conference ಮೂಲಕ ತಿಳುವಳಿಕೆ ಮತ್ತು ಸಮಾಲೋಚನೆ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಆಯೋಜಿಸಿರುವ ಬಗ್ಗೆ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/VCletter.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "21/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/25/2025",
+      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಸರ್ಕಾರಿ, ಅನುದಾನಿತ ಹಾಗೂ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಲ್ಲಿ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್/ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ 3ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾಗೆ/ವೃತ್ತಿಪರ ಅಭ್ಯರ್ಥಿಗಳ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಪ್ರವೇಶ ಅವಧಿಯನ್ನು ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/document(76).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "21/07/2025",
+      "circular_no": "ಸಿಟಿಇ 19 ಡಿವಿಪಿ (2) 2025",
+      "description": "\\ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಿಗೆ 2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿಗೆ ಕೋರ್ಸುವಾರು ಪ್ರವೇಶಾತಿ ನಿಗದಿಪಡಿಸಿ ರಾಜ್ಯ ಸರ್ಕಾರದ ಮಾನ್ಯತೆ ನೀಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/StatAprovalForAidedInstitute202526.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "21/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ(4)/23/2025",
+      "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಖಾಲಿಯಿರುವ ಪ್ರಾಂಶುಪಾಲರ ಹುದ್ದೆಗಳನ್ನು ಭರ್ತಿ ಮಾಡಲು ಅರ್ಹತೆಯನ್ನು ಪರಿಶೀಲಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/RegardingVarification.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "19/07/2025",
+      "circular_no": "ಡಿಟಿಇ/07/ಸಿಡಿಸಿ(1)/2024",
+      "description": "ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಎ ಮತ್ತು ಬಿ ವೃಂದದ ಅಧಿಕಾರಿಗಳಿಗೆ ವಿತ್ತೀಯ ಕಾರ್ಯನೀತಿ ಸಂಸ್ಥೆಯಲ್ಲಿ ನಾಲ್ಕು ದಿನಗಳ ಕ್ಯಾಂಪಾಸ್‌ ತರಬೇತಿಗಳನ್ನು ಆಯೋಜಿಸಿರುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/%E0%B2%B5%E0%B2%BF%E0%B2%A4%E0%B3%8D%E0%B2%A4%E0%B3%80%E0%B2%AF%E0%B2%A8%E0%B3%80%E0%B2%A4%E0%B2%BF-%E0%B2%86%E0%B2%97%E0%B2%B8%E0%B3%8D%E0%B2%9F%E0%B3%8D_2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "18/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎ2/37/2025",
+      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪಾರ್ಟ್-ಟೈಂ ಡಿಪ್ಲೋಮಾ ಪ್ರೋಗ್ರಾಂಗಳ ತಾತ್ಕಾಲಿಕ ಶೈಕ್ಷಣಿಕ ವೇಳಾಪಟ್ಟಿಯ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/parttimecalendarevents2025-26.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "18/07/2025",
+      "circular_no": "ಕಾತಾಶಿಆ/01/ಆಆಶಾ/2025-26",
+      "description": "ಕಾಲೇಜುಗಳ ಮುಖ್ಯ ಕಟ್ಟಡದ ಮುಖ್ಯ ದ್ವಾರದ GPS Co-Ordinates (Latitude and Longitude)ಗಳನ್ನು ನೀಡುವ ಬಗ್ಗೆ.‌ಗೂಗಲ್‌ ಫಾರಂ ಲಿಂಕ್‌ -   \"ಲಿಂಕ್\"",
+      "download_link": "https://forms.gle/iYusP7gBnCkGwPi78",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "17/07/2025",
+      "circular_no": "ಡಿಟಿಇ/ಪರೀಕ್ಷೆ೦ಇಎಫ್‌ಎಸ್/‌01/2025",
+      "description": "ತಾಂತ್ರಿಕ ಪರೀಕ್ಷಾ ಮಂಡಳಿ ವ್ಯಾಪ್ತಿಯಲ್ಲಿ ಬರುವ ರಾಜ್ಯದ ಸರ್ಕಾರಿ/ಅನುದಾನಿತ/ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಮತ್ತು ಗಣಿ ಶಾಲೆಗಳು 2025 ರ ನವೆಂಬರ್/ಡಿಸೆಂಬರ್‌ ಡಿಪ್ಲೋಮಾ ಸೆಮಿಸ್ಟರ್‌ ಪರೀಕ್ಷೆಗೆ ಬೇಕಾಗಿರುವ  ಲೇಖನ ಸಾಮಗ್ರಿಗಳ ಬೇಡಿಕೆ ಪಟ್ಟಿಯನ್ನು ಗೂಗಲ್‌ ನಮೂನೆಯಲ್ಲಿ ಭರ್ತಿ ಮಾಡಿ ಕಳುಹಿಸುವ ಬಗ್ಗೆ.ಬೆಂಗಳೂರು & ಕೋಲಾರ ರೂಟ್‌ ಗೂಗಲ್‌ ಫಾರಂ ಲಿಂಕ್",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/Exam4.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "17/07/2025",
+      "circular_no": "ಸಿಟಿಇ 41 ಡಿವಿಪಿ (1) 2024",
+      "description": "ಉನ್ನತ ಶಿಕ್ಷಣ ಇಲಾಖೆಯಡಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಸರ್ಕಾರಿ ಇಂಜಿನಿಯರಿಂಗ್‌ /ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಕಾಲೇಜುಗಳು ಹಾಗೂ ಪ್ರಥಮ ದರ್ಜೆ ಕಾಲೇಜುಗಳಲ್ಲಿ ಐ.ಪಿ. ಎಕೋ  ಸಿಸ್ಟಮ್‌ (IP Ecosystem) ಕಚೇರಿ ತೆರೆದು ಐಪಿ ಸಂಬಂಧಿತ ಚಟುವಟಿಕೆಗಳನ್ನು ಪ್ರಾರಂಭಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/IPCellOM(1).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "17/07/2025",
+      "circular_no": "ಸಿಟಿಇ 02 ಡಿವಿಪಿ (1) 2025",
+      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಬೋಧನಾ ಕಾರ್ಯಭಾರವನ್ನು ನಿರ್ವಹಿಸಿದ ಅತಿಥಿ ಉಪನ್ಯಾಸಕರಿಗೆ ಗೌರವಧನ ಪಾವತಿಸಲು ಅನುದಾನವನ್ನು ಬಿಡುಗಡೆ ಮಾಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/document(9).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "17/07/2025",
+      "circular_no": "ಸಿಟಿಇ 06 ಡಿವಿಪಿ (1) 2025",
+      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಸರ್ಕಾರಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಾಲೆಗಳಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಬೋಧನಾ ಕಾರ್ಯಭಾರವನ್ನು ನಿರ್ವಹಿಸಿದ ಅತಿಥಿ ಉಪನ್ಯಾಸಕರಿಗೆ ಗೌರವಧನ ಪಾವತಿಸಲು ಅನುದಾನವನ್ನು ಬಿಡುಗಡೆ ಮಾಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/document(10).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "16/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್‌1/10/2025",
+      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆಯುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ “Pradhan Mantri Uchchatar Shiksha Protsahan(PM-USP)” ಯೋಜನೆಯಡಿ Central Sector Scheme of Scholarship for College and University Students(CSSS) ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/Circularforcentralsectorschemeofscholarshipforcollegeanduniversitystudents-1.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "16/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್‌1/11/2025",
+      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಮತ್ತು ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆಯುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಎಐಸಿಟಿಇ ಯ ಪ್ರಗತಿ, ಸಕ್ಷಮ್‌ ಮತ್ತು ಸ್ವನಾಥ್‌ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/Circularforpragatisakshamandswanathfortheyear2025-26.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "15/07/2025",
+      "circular_no": "ಡಿಟಿಇ/ಎಡಿಎಂಐ೦/ಇಎಸ್‌ ಟಿ(7)/139/2025",
+      "description": "ಹೊಸದಾಗಿ ಪ್ರಾರಂಭವಾಗಿರುವ ಸಂಸ್ಥೆಗಳಿಗೆ ಬೋಧಕೇತರ ಸಿಬ್ಬಂದಿಗಳನ್ನು ಅನ್ಯ ಕಾರ್ಯ ನಿಮಿತ್ತ ಕಾರ್ಯ ನಿರ್ವಹಿಸಲು ನಿಯೋಜಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/document-42.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.072248"
+    },
+    {
+      "date": "11/07/2025",
+      "circular_no": "ಡಿಟಿಇ/ಪರೀಕ್ಷೆ೦ಇಸಿಎಸ್3/‌29/2025",
+      "description": "ಕೈಗಾರಿಕಾ ತರಬೇತಿ ಮತ್ತು ಉದ್ಯೋಗ ಇಲಾಖೆಯಡಿ ಜುಲೈ-2025 ರ ಅಖಿಲ ಭಾರತ ವ್ರತ್ತಿ ಪರೀಕ್ಷೆಗೆ ಪ್ರಾಯೋಗಿಕ ಪರೀಕ್ಷಕರನ್ನು ನಿಯೋಜಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/document-3.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "11/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖಾಯಲ್ಲಿ ಕೌನ್ಸಿಲಿಂಗ್‌ ಮೂಲಕ ವರ್ಗಾವಣೆ ಹೊಂದಿದ  ಸರ್ಕಾರಿ  ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಬೋಧಕ ವರ್ಗದವರ ಪಟ್ಟಿ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/TransferGPT.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "10/07/2025",
+      "circular_no": "ಡಿಟಿಇ 16 ಇಎಸ್‌ಟಿ(10) 2025",
+      "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ  ಉಪನ್ಯಾಸಕರುಗಳಿಗೆ 6ನೇ ಎಐಸಿಟಿಇ ವೇತನ ಶ್ರೇಣಿಯಡಿ ಎ ಜಿ ಪಿ ರೂ7000 ದಿಂದ ಎ ಜಿ ಪಿ ರೂ8000 ಮಂಜೂರು ಮಾಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/ED56DTE2025Date03-07-2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "10/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025 Makeup(SEE) ಥಿಯರಿ ಪರೀಕ್ಷೆಯ ಪ್ರಶ್ನೆಪತ್ರಿಕೆ ಮುದ್ರಣ ಕಾರ್ಯಕ್ಕೆ ಮುಖ್ಯ ವೀಕ್ಷಕರು ಮತ್ತು Sitting Squad ಗಳನ್ನು ನಿಯೋಜಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/MAKEUPEXAMS2025-APPOINTMENTOFOFFICERSFORQPPRINTING&SITTINGSQUAD_0001.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "10/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025ರ  Makeup(SEE) ಥಿಯರಿ ಪರೀಕ್ಷೆಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಪ್ರಾಚಾರ್ಯರು/ಮುಖ್ಯ ಅಧೀಕ್ಷಕರು/ಮುಖ್ಯ ವೀಕ್ಷಕರು/ಉಪ ಮುಖ್ಯ ಅಧೀಕ್ಷಕರು/ಕೊಠಡಿ ಮೇಲ್ವಿಚಾರಕರುಗಳು ಗಮನಿಸಬೇಕಾದ / ಅನುಸರಿಸಬೇಕಾದ ಕ್ರಮಗಳ ಕುರಿತು",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/MAKEUPEXAMS2025-DUTIESOFOFFICERSINTHEORYEXAMCENTRES_0001.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "10/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಪರೀಕ್ಷಾ ಕೇಂದ್ರಗಳಲ್ಲಿ ಪರೀಕ್ಷಾ ಕಾರ್ಯ ನಿರ್ವಹಿಸುವ ಬಾಹ್ಯ ಉಪನ್ಯಾಸಕರುಗಳಿಗೆ ಹಾಜರಾತಿ ಪತ್ರ ನೀಡುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/MAKEUPEXAMS2025-ISSUEOFATTENDENCECERIFICATE_0001.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "10/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025ರ Makeup(SEE) ಥಿಯರಿ ಪರೀಕ್ಷೆಯ ಪ್ರಶ್ನೆ ಪತ್ರಿಕೆ ಮುದ್ರಣಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ ಎಟಿಎಸ್‌ ಶೀಟ್‌ಗಳನ್ನು ಮುದ್ರಿಸಿ / ಮುದ್ರಿತ ಎಟಿಎಸ್‌ ಶೀಟ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸುವುದು ಮತ್ತು Telegram Groupನ VC ಗೆ ಥಿಯರಿ ಪರೀಕ್ಷಾ ಕೇಂದ್ರಗಳ ಪ್ರಾಂಶುಪಾಲರುಗಳು ಹಾಜರಾಗುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/MAKEUPEXAMS2025-PRINTINGOFATSSHEETS&VERIFICATION_0001.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "10/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025ರ Makeup(SEE) ಥಿಯರಿ ಪರೀಕ್ಷೆಗಳ ಉತ್ತರ ಪತ್ರಿಕೆಗಳನ್ನು ಬೆಂಗಳೂರು ನೋಡಲ್‌ ಕೇಂದ್ರಕ್ಕೆ ರವಾನಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/MAKEUPEXAMS2025-SENDINGOFTHEORYANSWERPAPERS_0001.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "10/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಸಂಬಂಧ, ಆನ್‌ ಲೈನ್‌ಕೌನ್ಸ್‌ಲಿಂಗ್‌ ನಡೆಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/dateandtimeexchange.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "09/07/2025",
+      "circular_no": "ಡಿಟಿಇ 01 ಇಎಸ್‌ಟಿ(10) 2025",
+      "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ  ಆಯ್ಕೆ ಶ್ರೇಣಿ ಉಪನ್ಯಾಸಕರುಗಳಿಗೆ ಕರಿಯರ್‌ ಅಡ್ವಾನ್ಸ್‌ ಮೆಂಟ್‌ ಯೋಜನೆಯಡಿ ವೃತ್ತಿ ಪದೋನ್ನತಿ ನೀಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/ED47DTE2025Date04-07-2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "09/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025 ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖಾಯಲ್ಲಿ ಕೌನ್ಸಿಲಿಂಗ್‌ ಮೂಲಕ ವರ್ಗಾವಣೆ ಹೊಂದಿದ  ಸರ್ಕಾರಿ  ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಬೋಧಕ ವರ್ಗದವರ ಪಟ್ಟಿ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/enggfinallist2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "09/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025 ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖಾಯಲ್ಲಿ ಕೌನ್ಸಿಲಿಂಗ್‌ ಮೂಲಕ ವರ್ಗಾವಣೆ ಹೊಂದಿದ  ಸರ್ಕಾರಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಾಲೆಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಬೋಧಕ ವರ್ಗದವರ ಪಟ್ಟಿ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/JTStransferfinallist2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "07/07/2025",
+      "circular_no": "ಡಿಟಿಇ 39 ಸಿಡಿಸಿ(1) 2024",
+      "description": "ಪ್ರಥಮ ವರ್ಷದ (1 & 2 ಸೆಮಿಸ್ಟರ್)‌ C-25 ಪರಿಷ್ಕೃತ ಡಿಪ್ಲೊಮಾ/ಪೋಸ್ಟ್‌ ಡಿಪ್ಲೊಮಾ ಪಠ್ಯಕ್ರಮಗಳನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/Curriculum2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "07/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "ಅನುಬಂಧ-5 : ಸರ್ಕಾರಿ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜು, ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಮತ್ತು ಸರ್ಕಾರಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಾಲೆಗಳಲ್ಲಿ ಖಾಲಿ ಇರುವ ಹುದ್ದೆಗಳ ವಿವರ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/ilovepdf_merged(4).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "07/07/2025",
+      "circular_no": "ಬಿಟಿಇ/4/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025 Makeup(SEE) ಪ್ರಾಯೋಗಿಕ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಲು ಮೂಖ್ಯ ಅಧೀಕ್ಷಕರುಗಳನ್ನು ನೇಮಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/MakeupexamschiefSuperintendentMEMO.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "05/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಸಂಬಂಧ ಗಣಕೀಕೃತ ಆನ್‌ ಲೈನ್‌ ಕೌನ್ಸೆಲಿಂಗ್ ಪ್ರಕ್ರಿಯೆ ನಡೆಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/EST8.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "05/07/2025",
+      "circular_no": "ಡಿಟಿಇ/01/ಇಎಸ್‌ಟಿ(3)/2024",
+      "description": "2025-26 ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿಗೆ  ಸರ್ಕಾರಿ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜು, ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಮತ್ತು ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಾಲೆಗಳಲ್ಲಿ ಅತಿಥಿ ಉಪನ್ಯಾಸಕರನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಮುದುವರೆಸುವ ಬಗ್ಗೆ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/guestfacultycircular25.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "05/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಪ್ರಕ್ರಿಯೆ ಸಂಬಂಧ ವರ್ಗಾವಣಾ ಅಂತಿಮ ಆದ್ಯತಾ ಪಟ್ಟಿ ಪ್ರಕಟಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/ilovepdf_merged(3).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "05/07/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜುಲೈ 2025 Makeup(SEE) ಥಿಯರಿ ಪರೀಕ್ಷಾ ಕೇಂದ್ರಗಳನ್ನು ನಿಗದಿಪಡಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/MakeupexamsexamcentreMEMO.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "04/07/2025",
+      "circular_no": "ಡಿಟಿಇ 17 ಇಎಸ್‌ಟಿ(10) 2025",
+      "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ  ಉಪನ್ಯಾಸಕರುಗಳಿಗೆ 6ನೇ ಎಐಸಿಟಿಇ ವೇತನ ಶ್ರೇಣಿಯಡಿ ಎ ಜಿ ಪಿ ರೂ5400/6000 ದಿಂದ ಎ ಜಿ ಪಿ ರೂ7000 ಮಂಜೂರು ಮಾಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/ED57DTE2025Date02-07-2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.073250"
+    },
+    {
+      "date": "04/07/2025",
+      "circular_no": "ಬಿಟಿಇ/05/ಇಸಿಎಸ್‌(1)/2021",
+      "description": "2021-22, 2022-23, 2023-24 ಮತ್ತು 2024-25 ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಳುಗಳಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆದ ವಿದ್ಯಾರ್ಥಿಗಳ ABC ID/APAAR ID ನ್ನು ಬಿಟಿಇ ಲಿಂಕ್ಸ್‌ ವೆಬ್‌ ಪೋರ್ಟಲ್‌ ಮೂಲಕ ಅಪ್ಲೋಡ್‌ ಮಾಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/CircularregardingAPAARID.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.075248"
+    },
+    {
+      "date": "04/07/2025",
+      "circular_no": "ಸಿಟಿಇ 05 ಡಿವಿಪಿ (2) 2025",
+      "description": "Dvs Polytechnic 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/Dvs.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.075248"
+    },
+    {
+      "date": "03/07/2025",
+      "circular_no": "ಸಿಟಿಇ 38 ಡಿವಿಪಿ (2) 2024",
+      "description": "JSS Polytechnic 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/Jss.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "03/07/2025",
+      "circular_no": "ಸಿಟಿಇ 34 ಡಿವಿಪಿ (2) 2024",
+      "description": "Karnataka institute of leather and fashion tecnology 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/Kilt.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "03/07/2025",
+      "circular_no": "ಸಿಟಿಇ 37 ಡಿವಿಪಿ (2) 2024",
+      "description": "Vidyavardhaka 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/Vidyavardhaka.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.075248"
+    },
+    {
+      "date": "03/07/2025",
+      "circular_no": "ಸಿಟಿಇ 24 ಡಿವಿಪಿ (2) 2024",
+      "description": "Ghousia 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/Ghousia.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.075248"
+    },
+    {
+      "date": "03/07/2025",
+      "circular_no": "ಡಿಟಿಇ/ಎನ್‌ಎಸ್‌ಎಸ್/‌02/ಚಟುವಟಿಕೆ/2022-23",
+      "description": "2024-25ನೇ ಸಾಲಿನ  ದೈನಂದಿನ ಚಟುವಟಿಕೆ/ ವಿಶೇಷ ಶಿಬಿರದ ಲೆಕ್ಕ ಪತ್ರಗಳ ಮತ್ತು ಚಟುವಟಿಕೆಗಳ ವರದಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/NSS/SubmissionofNSSAccountsandBills.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.075248"
+    },
+    {
+      "date": "02/07/2025",
+      "circular_no": "ಡಿಟಿಇ/11/ಸಿಡಿಸಿ(2)/2025",
+      "description": "CD-14-120 “ಪಠ್ಯಕ್ರಮ ಯೋಜನೆಗಳನ್ನು ಕಾರ್ಯರೂಪಕ್ಕೆ ತರುವುದು- ಪ್ರಾಯೋಗಿಕ ತರಬೇತಿ” – ಸಿಬ್ಬಂದಿ ನಿಯೋಜನೆ- ನೋಂದಣಿ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/14-7to18-7ECBtraining.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.075248"
+    },
+    {
+      "date": "02/07/2025",
+      "circular_no": "ಡಿಟಿಇ-ಪರೀಕ್ಷೆ೦ಇಸಿಎಸ್‌2/71/2025",
+      "description": "ಏಪ್ರಿಲ್/ಮೇ-2025ರ ಡಿಪ್ಲೋಮಾ ಸೆಮಿಸ್ಟರ್‌ ಥಿಯರಿ ಪರೀಕ್ಷೆಗಳ ಮೌಲ್ಯಮಾಪನವಾದ ಉತ್ತರಪತ್ರಿಕೆಗಳ ಮರುಮೌಲ್ಯಮಾಪನ ಕಾರ್ಯವನ್ನು ಸರ್ಕಾರಿ ಮುದ್ರಣ ತಂತ್ರಜ್ಞಾನ ಸಂಸ್ಥೆ, ಬೆಂಗಳೂರು ಇಲ್ಲಿ ಜರುಗಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/Scan_20250702(8).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "01/07/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಪ್ರಕ್ರಿಯೆ ಸಂಬಂಧ ವರ್ಗಾವಣಾ ತಾತ್ಕಾಲಿಕ ಆದ್ಯತಾ ಪಟ್ಟಿ ಪ್ರಕಟಿಸುವ ಬಗ್ಗೆ.ಕಡ್ಡಾಯ ವರ್ಗಾವಣೆಯ ತಾತ್ಕಾಲಿಕ ಆದ್ಯತಾ ಪಟ್ಟಿಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಆಕ್ಷೇಪಣೆಗಳಿದ್ದಲ್ಲಿ ಹಾಗೂ ವ್ಯತ್ಯಾಸಗಳಿದ್ದಲ್ಲಿ ಪೂರಕ ದಾಖಲೆಗಳೊಂದಿಗೆ ಮನವಿಯನ್ನು ಸಲ್ಲಿಸುವ ಗೂಗಲ್‌ ಲಿಂಕ್",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/Transfer.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "01/07/2025",
+      "circular_no": "ಡಿಟಿಇ/11/ಸಿಡಿಸಿ(2)/2025",
+      "description": "CD-11-104 07-07-2025 ರಿಂದ 11-07-2025 ರವರೆಗೆ ಬೆಂಗಳೂರಿನ ವಿಸ್ತರಣಾ ಕೇಂದ್ರದ NITTTR ನಲ್ಲಿ “ಇಂಟಿಗ್ರೇಟೆಡ್ ಎಂಪಿಡಾಗೋಜಿಯೊಂದಿಗೆ ಕಲಿಯುವವರ - ಕೇಂದ್ರೀಕೃತ ಕಾರ್ಯಪುಸ್ತಕಗಳನ್ನು ರಚಿಸುವುದು” - ಸಿಬ್ಬಂದಿ ನಿಯೋಜನೆ - ನೋಂದಣಿ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/7-7-to11-7ECBtraining.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "30/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ0ಎಸಿಎಂ2/25/2025",
+      "description": "2025-26 ನೇ ಸಾಲಿನಲ್ಲಿ ಸರ್ಕಾರಿ ಅನುದಾನಿತ ಹಾಗೂ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಲ್ಲಿ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್/ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ 3ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾಗೆ/ವೃತ್ತಿಪರ ಅಭ್ಯರ್ತೀಗಳ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಪ್ರವೇಶ ಅವಧಿಯನ್ನು ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/document(67).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.075248"
+    },
+    {
+      "date": "30/06/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "2020-21ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನಿಂದ ಜಾರಿಯಲ್ಲಿರುವ C-20 ಪಠ್ಯಕ್ರಮದಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆದು 1 ರಿಂದ  6ನೇ ಸೆಮಿಸ್ಟರ್‌ ಗಳಲ್ಲಿ ಅನುತ್ತೀರ್ಣಗೊಂಡಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳು ಜುಲೈ 2025 Makeup(SEE) ಪರೀಕ್ಷೆಗೆ ನೋಂದಾಯಿಸುವ ದಿನಾಂಕ ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/MakeupExam's2025fee'sextensionmemo.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "30/06/2025",
+      "circular_no": "ಡಿಟಿಇ/04/ಇಎಸ್‌ಟಿ(8)/2025/1391",
+      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಗ್ರೂಪ್-ಸಿ ಮತ್ತು ಡಿ ವೃಂದದ ಅಧಿಕಾರಿ/ನೌಕರರ ಸಾರ್ವತ್ರಿಕ ವರ್ಗಾವಣೆ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/EST(8).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "30/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ/4/2025",
+      "description": "ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಗ್ರಂಥಪಾಲಕರು(ಗ್ರೂಪ್-ಸಿ) ವೃಂದದ ತಾತ್ಕಾಲಿಕ ಜೇ಼ಠತಾ ಪಟ್ಟಿಯನ್ನು ಪ್ರಚುರ ಪಡಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/Librarian(Group-C)TentativeSeniorityList2025.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "27/06/2025",
+      "circular_no": "ಡಿಟಿಇ 05 ಸಿಡಿಸಿ(1) 2024",
+      "description": "C-25 ಪರಿಷ್ಕೃತ  ಡಿಪ್ಲೋಮಾ / ಪೋಸ್ಟ್‌ ಡಿಪ್ಲೋಮಾ ಪಠ್ಯಕ್ರಮಗಳನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/C25DiplomaCurriculumGOandOfficialMemo.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "27/06/2025",
+      "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
+      "description": "2025 ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಕೌನ್ಸಲಿಂಗ್‌ ನಡೆಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/NewDocument(400).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "26/06/2025",
+      "circular_no": "ಡಿಟಿಇ/ಎನ್‌ಎಸ್‌ಎಸ್/‌01/ಐಡಿಪಿ/2025-26",
+      "description": "ಇಂಗ್ಲೀಷ್‌ ಕೌಶಲ್ಯಗಳ(ESY) ಯೋಜನೆಯಡಿಯಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿಗಳಗೆ ವಿಡಿಯೋಗಳನ್ನು ರಚಿಸುವ ಸ್ಪರ್ಧೆ ಆಯೋಜಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/NSS/Britishcouncil.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "26/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಪರೀಕ್ಷೆ೦ಇಸಿಎಸ್‌1/71/2025",
+      "description": "ಏಪ್ರಿಲ್/ಮೇ 2025 ರ ಡಿಪ್ಲೋಮಾ ಸೆಮಿಸ್ಟರ್‌ ಪರೀಕ್ಷೆಯ ಮೌಲ್ಯಮಾಪನವಾದ ಥಿಯರಿ ಉತ್ತರ ಪತ್ರಿಕೆಗಳ ಫೋಟೋ ಪ್ರತಿ ನೀಡುವುದು/ಮರು ಮೌಲ್ಯಮಾಪನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಅವಧಿ ವಿಸ್ತರಿಸಿರುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/Revaluationdateextensionmemo.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "26/06/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್‌(1)/2025",
+      "description": "2020-21 ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನಿಂದ ಜಾರಿಯಲ್ಲಿರುವ C-20 ಪಠ್ಯಕ್ರಮದಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆದು 1 ರಿಂದ 6 ನೇ ಸೆಮಿಸ್ಟರ್‌ಗಳಲ್ಲಿ ಅನುತ್ತೀರ್ಣಗೊಂಡಿರುವ ಮತ್ತು Makeup CIE ಕಿರು ಪರೀಕ್ಷೆಗಳಲ್ಲಿಕನಿಷ್ಠ ಶೇ.40 ಆಂತರಿಕ ಅಂಕಗಳನ್ನು ಪಡೆದಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಪ್ರಾಯೋಗಿಕ ಹಾಗೂ ಥಿಯರಿ ವಿಷಯಗಳಲ್ಲಿ Makeup SEE ಪರೀಕ್ಷೆಗಳ ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಪ್ರಕಟಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/Makeupexams2025timetable&Exam'scenter's.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "26/06/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್‌(1)/2025",
+      "description": "ಜುಲೈ 2025 MakeUp (SEE) ಪ್ರಾಯೋಗಿಕ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/Makeupexams2025Chairman'sdetails.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "24/06/2025",
+      "circular_no": "ಬಿಟಿಇ/03/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಡಿಪ್ಲೋಮಾ ಸೆಮಿಸ್ಟರ್‌ ಪರೀಕ್ಷಾ ಫಲಿತಾಂಶದಲ್ಲಿ ಆಂತರಿಕ ಅಂಕಗಳು ಪ್ರಕಟವಾಗದಿದ್ದಲ್ಲಿ/ ಫಲಿತಾಂಶ ತಡೆಹಿಡಿಯಲ್ಪಟ್ಟಿದ್ದಲ್ಲಿ ಮಂಡಳಿಯಲ್ಲಿ Update ಮಾಡಲು ಸಂಸ್ಥೆಗಳು ಅನುಸರಿಸಬೇಕಾದ ಕ್ರಮಗಳ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/circularremardingIAupdation.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "23/06/2025",
+      "circular_no": "ಡಿಟಿಇ 04 ಇಎಸ್ ಟಿ(8) 2025",
+      "description": "2025-26ನೇ ಸಾಲಿನ ಗ್ರೂಪ್-ಬಿ ವೃಂದದ ಅಧಿಕಾರಿಗಳ ಸಾರ್ವತ್ರಿಕ ವರ್ಗಾವಣೆ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/GroupBtransferlist.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.076250"
+    },
+    {
+      "date": "19/06/2025",
+      "circular_no": "ಡಿಟಿಇ 04 ಇಎಸ್‌ಟಿ(8) 2025",
+      "description": "2025-26 ನೇ ಸಾಲಿಗೆ ಗ್ರೂಪ್- ಎ, ಬಿ, ಸಿ ಮತ್ತು ಡಿ ವೃಂದದ ಅಧಿಕಾರಿ/ನೌಕರರ ಸಾರ್ವತ್ರಿಕ ವರ್ಗಾವಣೆ ಮಾರ್ಗಸೂಚಿಗಳ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/generaltransferdateextend.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "19/06/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್(‌1)/2025",
+      "description": "ಜೂನ್/ಜುಲೈ  2025 Makeup ಪರೀಕ್ಷೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಆಂತರಿಕ ಅಂಕಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಪರಿವೀಕ್ಷಕರನ್ನು ನೇಮಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/Exam.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "18/06/2025",
+      "circular_no": "ಬಿಟಿಇ/04/ಇಸಿಎಸ್‌(1)/2025",
+      "description": "2020-21ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನಿಂದ ಜಾರಿಯಲ್ಲಿರುವ C-20 ರ ಪಠ್ಯಕ್ರಮದಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆದು 1 ರಿಂದ 6ನೇ ಸೆಮಿಸ್ಟರ್‌ ಗಳಲ್ಲಿ ಅನುತ್ತೀರ್ಣಗೊಂಡಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳು ಜುಲೈ 2025 Makeup(SEE) ಪರೀಕ್ಷೆಗೆ ನೋಂದಾಯಿಸುವ ದಿನಾಂಕ ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/2025Makeupexamsfeespaymentdateextensionmemo.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "17/06/2025",
+      "circular_no": "ಡಿಟಿಇ ೦೧ ಎಚ್‌ ಆರ್‌ ಎಂ ಎಸ್‌ ೨೦೨೫",
+      "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಮತ್ತು ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿತ್ತಿರುವ ಎಲ್ಲಾ ಸಿಬ್ಬಂದಿಯ ಮಾಹಿತಿಯನ್ನು kass ಮತ್ತು esr ನಲ್ಲಿ update ಮಾಡುವ ಬಗ್ಗೆ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/general/HRMS.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "17/06/2025",
+      "circular_no": "ಡಿಟಿಇ 03 ಇಎಸ್‌ಟಿ(6) 2025",
+      "description": "ಗಂಭೀರ ಕಾಯಿಕೆಗಳ ಪ್ರಕರಣಗಳಲ್ಲಿ ಕೋರಿಕೆ ವರ್ಗಾವಣೆಗೆ  ಮನವಿ ಸಲ್ಲಿಸಿರುವ ಬೋಧಕರ ವೈದ್ಯಕೀಯ ಪರಿಶೀಲನೆ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/EST(2).pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "16/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/42/2025",
+      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ವಿದ್ಯಾರ್ಥಿಗಳ 03ನೇ ಸೆಮಿಸ್ಟರ್‌ & 05ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ತರಗತಿಗಳಿಗೆ ಪ್ರವೇಶ, ವರ್ಗಾವಣೆ ಮತ್ತು ಮರು ಪ್ರವೇಶದ ಬಗ್ಗೆ ಸೂಚನೆಗಳು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PVT.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "16/06/2025",
+      "circular_no": "ಡಿಟಿಇ 294 ಇಎಸ್‌ಟಿ(7) 2025",
+      "description": "ನಿಯೋಜನೆ/ಅನ್ಯ ಕಾರ್ಯ ನಿಮಿತ್ತ ಮೇರೆಗೆ ಬೋಧಕ/ಬೋಧಕೇತರ ಸಿಬ್ಬಂದಿಗಳ ವಿವರ ಪಡೆಯುವ ಬಗ್ಗೆ.ಬೋಧಕ/ಬೋಧಕೇತರ ಸಿಬ್ಬಂದಿಗಳ ವಿವರಗಳನ್ನು ಸಲ್ಲಿಸುವ ಗೂಗಲ್ ಲಿಂಕ್",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/EST7.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "13/06/2025",
+      "circular_no": "ಡಿಟಿಇ/04/ಇಎಸ್ ಟಿ(8)/2025/1458",
+      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಗ್ರೂಪ್-ಸಿ ಮತ್ತು ಡಿ ವೃಂದದ ಅಧಿಕಾರಿ/ನೌಕರರ ಸಾರ್ವತ್ರಿಕ ವರ್ಗಾವಣೆ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/C&DGroupTransferorder.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "13/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/37/2025",
+      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ರೆಗ್ಯುಲರ್‌ ಡಿಪ್ಲೋಮಾ ಪ್ರೋಗ್ರಾಂಗಳ ತಾತ್ಕಾಲಿಕ ಶೈಕ್ಷಣಿಕ ವೇಳಾಪಟ್ಟಿಯ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/Academic.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "13/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/41/2025",
+      "description": "2025-26ನೇ  ಸಾಲಿನ 03 & 05ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ವ್ಯಾಸಂಗಗಳಿಗೆ ವಿದ್ಯಾರ್ಥಿಗಳ ಪ್ರವೇಶ ಹಾಗೂ ವಿದ್ಯಾರ್ಥಿಗಳ ವರ್ಗಾವಣೆ ಬಗ್ಗೆ(ಸರ್ಕಾರಿ ಮತ್ತು ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ) ಅನುಸರಿಸಬೇಕಾದ ಕ್ರಮಗಳ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/GPT&AIDED.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "12/06/2025",
+      "circular_no": "ಇಡಿ/ಕೆಇಎ/ಡಿಸಿಇಟಿ/2025",
+      "description": "ವೃತ್ತಿಪರ ಡಿಪ್ಲೋಮ ಪದವೀಧರ(Working Progfessional) ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳ ಪ್ರವೇಶಕ್ಕೆ ದಾಖಲೆಗಳ ಪರಿಶೀಲನೆ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/KEA.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.078264"
+    },
+    {
+      "date": "11/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/40/2025",
+      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಪ್ರವೇಶ ಪಡೆದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಡಿಪ್ಲೋಮಾ ತರಗತಿಗಳನ್ನು ಪ್ರಾರಂಭಿಸಲು ದಿನಾಂಕವನ್ನು ನಿಗಧಿಪಡಿಸುವ ಕುರಿತು.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/CommencementofDipClassesforstudamittedtothe1stsem2025-26.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.078264"
+    },
+    {
+      "date": "11/06/2025",
+      "circular_no": "ಡಿಟಿಇ 03 ಇಎಸ್‌ಟಿ(8) 2025",
+      "description": "ಕರ್ನಾಟಕ ಸಿವಿಲ್‌ ಸೇವೆಗಳ(ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕ ಸಿಬ್ಬಂದಿಯ ವರ್ಗಾವಣೆ ನಿಯಂತ್ರಣ) (ತಿದ್ದುಪಡಿ) ನಿಯಮಗಳು, 2025 ರ ಕರಡನ್ನು ಪ್ರಕಟಿಸಿರುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/%E0%B2%AA%E0%B2%B0%E0%B2%BF%E0%B2%9A%E0%B2%BE%E0%B2%B2%E0%B2%A8%E0%B2%A6%E0%B3%87%E0%B2%B6.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.078264"
+    },
+    {
+      "date": "10/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿSಹೆಚ್‌2/2/2025",
+      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಸರ್ಕಾರಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಾಲೆಗಳಲ್ಲಿ ವ್ಯಾಸಂಗ ಮಾಡುತ್ತಿರುವ ಎಲ್ಲಾ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಪ್ರಿಮೆಟ್ರಿಕ್-‌ ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶದಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿವೆತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/SSP.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "10/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/39/2025",
+      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಕೆಲಸ ಮಾಡುತ್ತಿರುವ ವೃತ್ತಿಪರ ಅಭ್ಯರ್ಥಿಗಳಿಗೆ (Working Professionals) ಸರ್ಕಾರಿ, ಅನುದಾನಿತ ಹಾಗೂ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಮುಖಾಂತರ 2 ನೇ ವರ್ಷ/3ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಕೋರ್ಸುಗಳ ಪ್ರವೇಶಾತಿಗೆ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಅರ್ಜಿಯನ್ನು ಆಹ್ವಾನಿಸಿ, ಆಫ್-ಲೈನ್‌ ಮೂಲಕ ಪ್ರವೇಶ ನೀಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/workingprofessionalAdmissionnotification2025-26.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "10/06/2025",
+      "circular_no": "ಡಿಟಿಇ 03 ಇಎಸ್‌ಟಿ(8) 2025",
+      "description": "2025-26ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಕೈಗೊಳ್ಳುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/medicaltransfer.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.078264"
+    },
+    {
+      "date": "09/06/2025",
+      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/38/2025",
+      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಪೋಸ್ಟ್‌ ಡಿಪ್ಲೋಮಾ ಇನ್‌ ಇಂಡಸ್ಟ್ರಿಯಲ್‌ ಸೇಪ್ಟಿ ಕೋರ್ಸಿಗೆ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಅರ್ಜಿ ಆಹ್ವಾನಿಸಿ, ಸೀಟು ಹಂಚಿಕೆ ಮಾಡುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PostDiplomainIndustrialSefetyAdmNotification2025-26.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.078264"
+    },
+    {
+      "date": "05/06/2025",
+      "circular_no": "ಡಿಟಿಇ/07/ಸಿಡಿಸಿ(1)/2024",
+      "description": "ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಎ ಮತ್ತು ಬಿ ವೃಂದದ ಅಧಿಕಾರಿಗಳಿಗೆ ವಿತ್ತೀಯ ಕಾರ್ಯನೀತಿ ಸಂಸ್ಥೆಯಲ್ಲಿ ಜುಲೈ ಮಾಹೆಯಲ್ಲಿ ನಾಲ್ಕು ದಿನಗಳ ಕ್ಯಾಂಪಸ್‌ ತರಬೇತಿಯನ್ನು ಆಯೋಜಿಸಿರುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/FPITraining-July2025-DTEStaffDeputation.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    },
+    {
+      "date": "31/05/2025",
+      "circular_no": "ಸಿಟಿಇ 40 ಡಿವಿಪಿ(1) 2025",
+      "description": "ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಸಂಸ್ಥೆಗಳನ್ನು ಸರ್ಕಾರದ ವೇತನಾನುದಾನಕ್ಕೆ ಒಳಪಡಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/document(5)_merged.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.078264"
+    },
+    {
+      "date": "21/05/2025",
+      "circular_no": "ಸಿಟಿಇ 33 ಡಿವಿಪಿ (2) 2024",
+      "description": "G.M institute of tecnology 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/GMinstitute.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "21/05/2025",
+      "circular_no": "ಸಿಟಿಇ 03 ಡಿವಿಪಿ (2) 2025",
+      "description": "K.B.C trust 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/KBC.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "21/05/2025",
+      "circular_no": "ಸಿಟಿಇ 31 ಡಿವಿಪಿ (2) 2024",
+      "description": "Governament Polytechnic arasikere 2025-26 ನೇ ಸಾಲಿನ ನಿರಾಕ್ಷೇಪಣಾ ಪ್ರಮಾಣ ಪತ್ರ",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/DVP/GOVERNMENTOFKARNATAKA.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.074249"
+    },
+    {
+      "date": "16/05/2025",
+      "circular_no": "ಡಿಟಿಇ 03 ಇಎಸ್‌ಟಿ (12) 2025",
+      "description": "2024-25 ನೇ ಸಾಲಿನ ಕಾರ್ಯನಿರ್ವಹಣಾ ವರದಿಗಳನ್ನು ಇ-ಫಾರ್ ಹಾಗೂ ಆಸ್ತಿ ಮತ್ತು ಹೊಣೆಗಾರಿಕೆ ಪಟ್ಟಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ.",
+      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/SignedCircular.pdf",
+      "source_url": "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
+      "scraped_at": "2025-08-05T14:13:59.077253"
+    }
+  ],
+  "scraping_status": "success",
+  "source_breakdown": {
+    "departmental": 98,
+    "dvp": 0
+  }
 }
