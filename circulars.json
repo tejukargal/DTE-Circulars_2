@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-08-06T19:16:01.229573",
-  "total_circulars": 133,
+  "last_updated": "2025-08-06T13:50:02.531836",
+  "total_circulars": 87,
   "circulars": [
     {
       "date": "05-08-2025",
@@ -498,15 +498,6 @@
       "source": "EST"
     },
     {
-      "date": "30/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ0ಎಸಿಎಂ2/25/2025",
-      "description": "2025-26 ನೇ ಸಾಲಿನಲ್ಲಿ ಸರ್ಕಾರಿ ಅನುದಾನಿತ ಹಾಗೂ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಲ್ಲಿ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್/ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ 3ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾಗೆ/ವೃತ್ತಿಪರ ಅಭ್ಯರ್ತೀಗಳ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಪ್ರವೇಶ ಅವಧಿಯನ್ನು ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/document(67).pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.246305",
-      "source": "ACM"
-    },
-    {
       "date": "27/06/2025",
       "circular_no": "ಡಿಟಿಇ/03/ಇಎಸ್‌ಟಿ(8)/2025",
       "description": "2025 ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಕೌನ್ಸಲಿಂಗ್‌ ನಡೆಸುವ ಬಗ್ಗೆ.",
@@ -552,15 +543,6 @@
       "source": "EST"
     },
     {
-      "date": "16/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/42/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ವಿದ್ಯಾರ್ಥಿಗಳ 03ನೇ ಸೆಮಿಸ್ಟರ್‌ & 05ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ತರಗತಿಗಳಿಗೆ ಪ್ರವೇಶ, ವರ್ಗಾವಣೆ ಮತ್ತು ಮರು ಪ್ರವೇಶದ ಬಗ್ಗೆ ಸೂಚನೆಗಳು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PVT.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.247306",
-      "source": "ACM"
-    },
-    {
       "date": "13/06/2025",
       "circular_no": "ಡಿಟಿಇ/04/ಇಎಸ್ ಟಿ(8)/2025/1458",
       "description": "2025-26ನೇ ಸಾಲಿಗೆ ಗ್ರೂಪ್-ಸಿ ಮತ್ತು ಡಿ ವೃಂದದ ಅಧಿಕಾರಿ/ನೌಕರರ ಸಾರ್ವತ್ರಿಕ ವರ್ಗಾವಣೆ ಕುರಿತು.",
@@ -568,24 +550,6 @@
       "source_url": "https://dtek.karnataka.gov.in/page/Circulars/EST/kn",
       "scraped_at": "2025-08-06T19:15:07.976427",
       "source": "EST"
-    },
-    {
-      "date": "13/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/37/2025",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ರೆಗ್ಯುಲರ್‌ ಡಿಪ್ಲೋಮಾ ಪ್ರೋಗ್ರಾಂಗಳ ತಾತ್ಕಾಲಿಕ ಶೈಕ್ಷಣಿಕ ವೇಳಾಪಟ್ಟಿಯ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/Academic.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.247306",
-      "source": "ACM"
-    },
-    {
-      "date": "13/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/41/2025",
-      "description": "2025-26ನೇ  ಸಾಲಿನ 03ನೇ & 05ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ವ್ಯಾಸಂಗಗಳಿಗೆ ವಿದ್ಯಾರ್ಥಿಗಳ ಪ್ರವೇಶ ಹಾಗೂ ವಿದ್ಯಾರ್ಥಿಗಳ ವರ್ಗಾವಣೆ ಬಗ್ಗೆ(ಸರ್ಕಾರಿ ಮತ್ತು ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ) ಅನುಸರಿಸಬೇಕಾದ ಕ್ರಮಗಳ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/GPT&AIDED.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.247306",
-      "source": "ACM"
     },
     {
       "date": "11/06/2025",
@@ -597,15 +561,6 @@
       "source": "EST"
     },
     {
-      "date": "11/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/40/2025",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಪ್ರವೇಶ ಪಡೆದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಡಿಪ್ಲೋಮಾ ತರಗತಿಗಳನ್ನು ಪ್ರಾರಂಭಿಸಲು ದಿನಾಂಕವನ್ನು ನಿಗಧಿಪಡಿಸುವ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/CommencementofDipClassesforstudamittedtothe1stsem2025-26.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.247306",
-      "source": "ACM"
-    },
-    {
       "date": "10/06/2025",
       "circular_no": "ಡಿಟಿಇ 03 ಇಎಸ್‌ಟಿ(8) 2025",
       "description": "2025-26ನೇ ಸಾಲಿನ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ಬೋಧಕರ ವರ್ಗಾವಣೆ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಕೈಗೊಳ್ಳುವ ಬಗ್ಗೆ.",
@@ -615,87 +570,6 @@
       "source": "EST"
     },
     {
-      "date": "10/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿSಹೆಚ್‌2/2/2025",
-      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಸರ್ಕಾರಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಾಲೆಗಳಲ್ಲಿ ವ್ಯಾಸಂಗ ಮಾಡುತ್ತಿರುವ ಎಲ್ಲಾ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಪ್ರಿಮೆಟ್ರಿಕ್-‌ ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶದಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿವೆತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/SSP.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.247306",
-      "source": "ACM"
-    },
-    {
-      "date": "10/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/39/2025",
-      "description": "2025-26ನೇ ಸಾಲಿಗೆ ಕೆಲಸ ಮಾಡುತ್ತಿರುವ ವೃತ್ತಿಪರ ಅಭ್ಯರ್ಥಿಗಳಿಗೆ (Working Professionals) ಸರ್ಕಾರಿ, ಅನುದಾನಿತ ಹಾಗೂ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಮುಖಾಂತರ 2 ನೇ ವರ್ಷ/3ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಕೋರ್ಸುಗಳ ಪ್ರವೇಶಾತಿಗೆ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಅರ್ಜಿಯನ್ನು ಆಹ್ವಾನಿಸಿ, ಆಫ್-ಲೈನ್‌ ಮೂಲಕ ಪ್ರವೇಶ ನೀಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/workingprofessionalAdmissionnotification2025-26.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.247306",
-      "source": "ACM"
-    },
-    {
-      "date": "09/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/38/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಪೋಸ್ಟ್‌ ಡಿಪ್ಲೋಮಾ ಇನ್‌ ಇಂಡಸ್ಟ್ರಿಯಲ್‌ ಸೇಪ್ಟಿ ಕೋರ್ಸಿಗೆ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಅರ್ಜಿ ಆಹ್ವಾನಿಸಿ, ಸೀಟು ಹಂಚಿಕೆ ಮಾಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PostDiplomainIndustrialSefetyAdmNotification2025-26.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
-    },
-    {
-      "date": "02/06/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/26/2025",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ವರ್ಷದ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶ ಸಂಬಂಧ-ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಿಗೆ ಪ್ರವೇಶಾವಧಿಯನ್ನು ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/dateextnfor1stsemdiplomaprivatePolytechnics.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
-    },
-    {
-      "date": "30/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/30/2025",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ವರ್ಷದ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಾತಿ ಸಂಬಂಧ-ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಉಪನ್ಯಾಸಕರು ಮತ್ತು ಸಿಬ್ಬಂದಿಯವರನ್ನು ನೇಮಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/appointmentofstafftonewgovtpolytechnics.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
-    },
-    {
-      "date": "27/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/34/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ 02 ವರ್ಷಗಳ ಐ.ಟಿ.ಐ/ದ್ವಿತೀಯ ಪಿ.ಯು.ಸಿ(ವಿಜ್ಞಾನ)/ದ್ವಿತೀಯ ಪಿ.ಯು.ಸಿ(ತಾಂತ್ರಿಕ ಔಿಷಯಗಳಲ್ಲಿ) ಉತ್ತೀರ್ಣರಾಗಿರುವ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಸರ್ಕಾರಿ ಮತ್ತು ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಸ್ಕೀಂ ಮುಖಾಂತರ 2ನೇ ವರ್ಷ/3ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಕೋರ್ಸುಗಳಿಗೆ ಆಫ್-ಲೈನ್‌ ಮೂಲಕ ಅರ್ಜಿ ಆಹ್ವಾನಿಸಿ, ಸೀಟು ಹಂಚಿಕೆ ಮಾಡುವ ಬಗ್ಗೆ.ಆಫ್-ಲೈನ್‌ ಮೂಲಕ ಸಲ್ಲಿಸುವ ಅರ್ಜಿನಮೂನೆ",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/GANote.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
-    },
-    {
-      "date": "27/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/35/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ 02 ವರ್ಷಗಳ ಐ.ಟಿ.ಐ/ದ್ವಿತೀಯ ಪಿ.ಯು.ಸಿ(ವಿಜ್ಞಾನ)/ದ್ವಿತೀಯ ಪಿ.ಯು.ಸಿ(ತಾಂತ್ರಿಕ ವಿಷಯಗಳಲ್ಲಿ) ಉತ್ತೀರ್ಣ ಹೊಂದಿದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ 2ನೇ ವರ್ಷ/3ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾಗೆ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಸ್ಕೀಂ ಮುಖಾಂತರ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಪ್ರವೇಶ ನೀಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PNote.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
-      "date": "26/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/25/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನಲ್ಲಿ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪೋಮಾ ಪ್ರವೇಶ ಸಂಬಂಧ ಸರ್ಕಾರಿ ಹಾಗೂ ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳ ಕೋರ್ಸುಗಳಿಗೆ ಪ್ರವೇಶ ಅವಧಿಯನ್ನು ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/Date.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
-    },
-    {
-      "date": "23/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦/ಎಸ್‌ಸಿಹೆಚ್‌1/6/2025/1",
-      "description": "AICTE ಯ ಯಶಸ್ವಿ ಮತ್ತು ಸರಸ್ವತಿ ವಿದ್ಯಾರ್ಥಿವೇತನ ಯೋಜನೆಯಡಿ ಬಾಕಿ ಇರುವ ಅರ್ಜಿಗಳನ್ನು ಸಂಸ್ಥೆ ಮಟ್ಟದಲ್ಲಿ ಪರಿಶೀಲಿಸಲು ಅಗತ್ಯ ನಿರ್ದೇಶನಗಳನ್ನು ಹೊರಡಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/KARNATAKA_YASHASHVI_SARSWATI_SCHOLARSHIP_PENDINGVERIFICATIONATINSTITUTELEVEL1.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
       "date": "22/05/2025",
       "circular_no": "ಡಿಟಿಇ 28 ಇಎಸ್‌ಟಿ (10) 2025",
       "description": "ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ವ್ಯಾಪ್ತಿಯಲ್ಲಿನ ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಉಪನ್ಯಾಸಕರುಗಳಿಗೆ 7ನೇ ಎಐಸಿಟಿಇ ವೇತನ ಶ್ರೇಣಿಯಲ್ಲಿ ಪದೋನ್ನತಿ ನೀಡುವ ಬಗ್ಗೆ.",
@@ -703,15 +577,6 @@
       "source_url": "https://dtek.karnataka.gov.in/page/Circulars/EST/kn",
       "scraped_at": "2025-08-06T19:15:07.977482",
       "source": "EST"
-    },
-    {
-      "date": "22/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/13/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನಿಂದ ಹೊಸದಾಗಿ ಪ್ರಾರಂಭವಾಗುತ್ತಿರುವ ಅರಸೀಕೆರೆ, ಕೊಲ್ಹಾರ ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಎಸ್.ಎಸ್.ಎಲ್.ಸಿ/ತತ್ಸಮಾನ ವಿದ್ಯಾರ್ಹತೆಗೆ ಅನುಗುಣವಾದ ಕೋರ್ಸ್ ಗಳ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಾತಿಗೆ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಅರ್ಜಿಯನ್ನು ಆಹ್ವಾನಿಸಿ, ಆಫ್-ಲೈನ್‌ ಮೂಲಕ ಪ್ರವೇಶ ನೀಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/newpolytechnicarasikerekolharadmnotification.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
     },
     {
       "date": "20/05/2025",
@@ -759,15 +624,6 @@
       "source": "EST"
     },
     {
-      "date": "17/05/2025",
-      "circular_no": "-----",
-      "description": "2025-26 ನೇ ಸಾಲಿನ ಡಿಪ್ಲೋಮಾ ಪ್ರಥಮ ವರ್ಷದ ನಾನ್-ಇಂಟರಾಕ್ಟಿವ್ ಆನ್‌ಲೈನ್ ಪ್ರವೇಶದ ಮೆರಿಟ್ ಪಟ್ಟಿ.",
-      "download_link": "https://drive.google.com/file/d/10EDdlhV7NzhhzKjtwIHPauxVbnFLyjT9/view?usp=sharing",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
       "date": "16/05/2025",
       "circular_no": "ಡಿಟಿಇ 04 ಇಎಸ್‌ಟಿ (8) 2025",
       "description": "2025-26ನೇ ಸಾಲಿಗೆ ಗ್ರೂಪ್-ಎ, ಬಿ, ಸಿ ಮತ್ತು ಡಿ ವೃಂದದ ಅಧಿಕಾರಿ/ನೌಕರರ ಸಾರ್ವತ್ರಿಕ ವರ್ಗಾವಣೆ ಮಾರ್ಗಸೂಚಿಗಳ ಕುರಿತು.",
@@ -775,33 +631,6 @@
       "source_url": "https://dtek.karnataka.gov.in/page/Circulars/EST/kn",
       "scraped_at": "2025-08-06T19:15:07.977482",
       "source": "EST"
-    },
-    {
-      "date": "16/05/2025",
-      "circular_no": "-----",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ವರ್ಷದ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಾತಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಸರ್ಕಾರಿ ಹಾಗೂ ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಸಂಸ್ಥೆಗಳಲ್ಲಿ ಸೀಟ್‌ ಮ್ಯಾಟ್ರಿಕ್ಸ್.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/GovtAidedSeatMatrix_16052025_merged.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
-      "date": "16/05/2025",
-      "circular_no": "-----",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ವರ್ಷದ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಾತಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಸಂಸ್ಥೆಗಳಲ್ಲಿ ಸೀಟ್‌ ಮ್ಯಾಟ್ರಿಕ್ಸ್.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PvtSeatMatrix_16052025_merged.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
-      "date": "14/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/32/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನಿಂದ ದೇವನೂರಿನ ಶ್ರೀ ಗುರುಮಲ್ಲೇಶ್ವರ ಖಾಸಗಿ ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ನ ಅನುದಾನಿತ ಕೋರ್ಸುಗಳ ಸರ್ಕಾರಿ ಸೀಟುಗಳ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಾತಿಗೆ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಅರ್ಜಿಯನ್ನು ಆಹ್ವಾನಿಸಿ, ಆಫ್-ಲೈನ್‌ ಮೂಲಕ ಪ್ರವೇಶ ನೀಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/Devnur.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
     },
     {
       "date": "13/05/2025",
@@ -858,24 +687,6 @@
       "source": "EST"
     },
     {
-      "date": "12/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/23/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನ ಜೆ.ಎಸ್.ಎಸ್‌ ವಿಶೇಷಚೇತನರ ಪಾಲಿಟೆಕ್ನಿಕ್(ಅನುದಾನಿತ), ಮೈಸೂರು ಈ ಸಂಸ್ಥೆಯಲ್ಲಿನ ಡಿಪ್ಲೋಮಾ ಕೋರ್ಸುಗಳ ಪ್ರವೇಶಕ್ಕೆ ವಿಶೇಷಚೇತನರ(ಅಂಗವಿಕಲ) ಅಭ್ಯರ್ಥಿಗಳಿಂದ ಅರ್ಜಿಗಳನ್ನು ಆಹ್ವಾನಿಸುವ ಬಗ್ಗೆ.ಅರ್ಜಿ ನಮೂನೆ",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/document(58)-1.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
-    },
-    {
-      "date": "10/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ1/19/2025",
-      "description": "ಡಿಸಿಇಟಿ-2025 ರ ಪರೀಕ್ಷೆ ಬರೆದ ಅರ್ಹ ಅಭ್ಯರ್ಥಿಗಳ ದಾಖಲಾತಿ ಪರಿಶೀಲನೆಗೆ ಉಪನ್ಯಾಸಕರನ್ನು ನೇಮಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/appointmentoflecturersforDCET25DocVerification.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.248313",
-      "source": "ACM"
-    },
-    {
       "date": "09/05/2025",
       "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ(4)/8/2024",
       "description": "ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳ ಪ್ರಾಂಶುಪಾಲರು ವೃಂದದ ದಿನಾಂಕ:01.01.2023 ರಿಂದ 31.12.2023ರ ಅವಧಿಗೆ ದಿನಾಂಕ:01.01.2024ರಲ್ಲಿದ್ದಂತೆ ತಾತ್ಕಾಲಿಕ ಜೇಷ್ಠತಾ ಪಟ್ಟಿಯನ್ನು ಪ್ರಕಟಿಸುವ ಬಗ್ಗೆ.",
@@ -883,33 +694,6 @@
       "source_url": "https://dtek.karnataka.gov.in/page/Circulars/EST/kn",
       "scraped_at": "2025-08-06T19:15:07.978439",
       "source": "EST"
-    },
-    {
-      "date": "07/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/30/2025",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ವರ್ಷದ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಾತಿ ಸಂಬಂಧ – ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಉಪನ್ಯಾಸಕರು ಮತ್ತು ಸಿಬ್ಬಂದಿ ಯವರನ್ನು ನೇಮಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/ACM301.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
-      "date": "05/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಅಡಿಎಂಐ೦ಎಸಿಎಂ2/25/2025",
-      "description": "2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನಲ್ಲಿ ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಹಾಗೂ ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿನ ಅನುದಾನಿತ ಕೋರ್ಸುಗಳಿಗೆ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಇಂಜಿನಿಯರಿಂಗ್‌ ಹಾಗೂ ನಾನ್ ಇಂಜಿನಿಯರಿಂಗ್‌ ಡಿಪ್ಲೋಮಾ ಕೋರ್ಸುಗಳ ಪ್ರವೇಶಾತಿಗಾಗಿ ಅರ್ಜಿ ಆಹ್ವಾನಿಸಿ, ಸೀಟು ಹಂಚಿಕೆ ಮಾಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://drive.google.com/file/d/1wkBDqGurcnBYrvczAaWzbY5r7C_zcq6z/view?usp=sharing",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
-      "date": "05/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಅಡಿಎಂಐ೦ಎಸಿಎಂ2/26/2025",
-      "description": "ರಾಜ್ಯದ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಹಾಗೂ ಅನುದಾನಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿನ ಅನುದಾನ ರಹಿತ ಕೋರ್ಸುಗಳಿಗೆ 2025-26ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನಲ್ಲಿ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಕ್ಕಾಗಿ ಸೀಟು ಹಂಚಿಕೆ ಮಾಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/2025-26AdmissionnotificationforPrivatePolytechnicsandApplicationform.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
     },
     {
       "date": "03/05/2025",
@@ -946,15 +730,6 @@
       "source_url": "https://dtek.karnataka.gov.in/page/Circulars/EST/kn",
       "scraped_at": "2025-08-06T19:15:07.978439",
       "source": "EST"
-    },
-    {
-      "date": "02/05/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/2025",
-      "description": "2025-26 ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನ ಪ್ರಥಮ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಪ್ರವೇಶಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ ಕೋರ್ಸುವಾರು ಇಂಟೇಕ್‌ ಹಾಗೂ ಸೀಟ್‌ ಮ್ಯಾಟ್ರಿಕ್ಸ್‌ ನಿಗದಿ ಕುರಿತು.‌ಕೋರ್ಸುವಾರು ಇಂಟೇಕ್‌ ಹಾಗೂ ಸೀಟ್‌ ಮ್ಯಾಟ್ರಿಕ್ಸ್‌  ವಿವರಗಳು",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/2025_05_035_28%E2%80%AFpmOfficeLens.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
     },
     {
       "date": "28/04/2025",
@@ -1002,195 +777,6 @@
       "source": "EST"
     },
     {
-      "date": "22/04/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/21/2025",
-      "description": "2025-26 ನೇ ಸಾಲಿನಲ್ಲಿ ಖಾಸಗಿ ಅನುದಾನರಹಿತ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಸಂಸ್ಥೆಗಳು/ಆಡಳಿತ ಮಂಡಳಿಯವರು ಸೀಟುಗಳನ್ನು ಸ್ವ-ಇಚ್ಚೆಯಿಂದ ಸರ್ಕಾರಕ್ಕೆ ಬಿಟ್ಟು ಕೊಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PrivateSeatSurrender2025-26.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "17/04/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/19/2025",
-      "description": "2025-26ನೇ ಸಾಲಿನ ಸರ್ಕಾರಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಶಾಲೆಗಳಲ್ಲಿ 8ನೇ ತರಗತಿಯ ಪ್ರವೇಶಾತಿ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/GovtJTS.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.249452",
-      "source": "ACM"
-    },
-    {
-      "date": "17/04/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/20/2025",
-      "description": "2025-26 ನೇ ಸಾಲಿಗೆ ಖಾಸಗಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಶಾಲೆಗಳಲ್ಲಿ 8 ನೇ ತರಗತಿಯ ಪ್ರವೇಶಕ್ಕಾಗಿ ಪ್ರವೇಶಾಧಿಸೂಚನೆ ಹೊರಡಿಸಿರುವ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/PvtJTS.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "16/04/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ1/14/2025",
-      "description": "ಮಹಾತ್ಮಾ ಗಾಂಧೀಜಿಯವರ ಅಧ್ಯಕ್ಷತೆಯಲ್ಲಿ 1924ರಲ್ಲಿ ಬೆಳಗಾವಿಯಲ್ಲಿ ನಡೆದ ಕಾಂಗ್ರೇಸ್‌ ಅಧಿವೇಶನ ಶತಮಾನೋತ್ಸವದ ಅಂಗವಾಗಿ“ಗಾಂಧಿ ಭಾರತ” ಕಾರ್ಯಕ್ರಮವನ್ನು ಆಯೋಜಿಸುವ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/mahatma.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "28/02/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್1/3/2025",
-      "description": "ಎ.ಐ.ಸಿ.ಟಿ.ಇ. ನವದೆಹಲಿ ಇವರು 2024-25ನೇ ಸಾಲಿನಿಂದ ಹೊಸದಾಗಿ ಜಾರಿಗೆ ತಂದಿರುವ \"ಯಶಸ್ವಿ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕಾಗಿ\" ಆನ್‌ಲೈನ್ ಮೂಲಕ ಅರ್ಜಿ ಆಹ್ವಾನಿಸಿರುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/YashasviScholarshipcircular.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "11/02/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/08/2024",
-      "description": "2024-25 ನೇ ಸಾಲಿನ ಅರೆಕಾಲಿಕ (ಪಾರ್ಟ್-ಟೈಮ್) 03 ಮತ್ತು 05 ನೇ ಸೆಮಿಸ್ಟರ್‌ ತರಗತಿಗಳಿಗೆ ಸರ್ಕಾರಿ, ಅನುದಾನಿತ ಹಾಗೂ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಗಳಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆಯಲು ಅಂತಿಮ ದಿನಾಂಕ ನಿಗದಿಪಡಿಸುವ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/3&5ACM.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "11/02/2025",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ2/72/2024",
-      "description": "2024-25 ನೇ ಸಾಲಿನ ಅರೆಕಾಲಿಕ (ಪಾರ್ಟ್-ಟೈಮ್) ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ ಮುಖಾಂತರ 2 ವರ್ಷ/3 ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೋಮಾ ಕೋರ್ಸುಗಳ ಪ್ರವೇಶದ ಅವಧಿಯನ್ನು ವಿಸ್ತರಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/LateralACM.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "17/12/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ0ಎಸಿಎಂ2/75/2024",
-      "description": "2024-25ನೇ ಸಾಲಿನ ಸರ್ಕಾರಿ/ಅನುದಾನಿತ/ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ 02, 04 ಮತ್ತು 06ನೇ ಸೆಮಿಸ್ಟರ್‌ ತರಗತಿಗಳಿಗೆ ಮರು ಪ್ರವೇಶ ಪಡೆಯಲು ಅಂತಿಮ ದಿನಾಂಕ ನಿಗದಿಪಡಿಸುವ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/ACM2.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "16/12/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ0ಎಸಿಎಂ2/74/2024",
-      "description": "2024-25 ನೇ ಶೈಕ್ಷಣಿಕ  ಸಾಲಿನ ೦2, ೦4, ೦6 ನೇ ಸೆಮಿಸ್ಟರ್‌ ಡಿಪ್ಲೊಮಾ ತರಗತಿಗಳನ್ನು ಪ್ರಾರಂಭಿಸಲು ದಿನಾಂಕವನ್ನು ನಿಗದಿಪಡಿಸುವ ಕುರಿತು.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/Exam/commencementofdiplomaclassesof246semester(1).pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "20/11/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್‌2/5/2024",
-      "description": "2024-25ನೇ ಸಾಲಿಗೆ  ಇಂಜಿನಿಯರಿಂಗ್ ಮತ್ತು ಪಾಲಿಟೆಕ್ನಿಕ್ ಗಳಲ್ಲಿ ವ್ಯಾಸಂಗ ಮಾಡುತ್ತಿರುವ ವಿಶೇಷ ಪಾಲನೆ ಅಥವಾ ವಿಶೇಷ ವರ್ಗದ ಮಕ್ಕಳು(ಹೆಚ್.ಐ.ವಿ/ಕುಷ್ಠರೋಗ) ಪೀಡಿತ ಪೋಷಕರ ಮಕ್ಕಳಿಗೆ/ಪೀಡಿತ ಅರ್ಹ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ವಿದ್ಯಾರ್ಥಿವೇತನ ಮತ್ತು ಉಚಿತ  ಶಿಕ್ಷಣ ನೀಡಲು ರಾಜ್ಯ ತಂತ್ರಾಂಶದಲ್ಲಿ ಅರ್ಜಿ ಆಹ್ವಾನಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/CDC/AdobeScan20-Nov-2024(1).pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "19/11/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್‌2/5/2024",
-      "description": "ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆದಿರುವ ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿಗಳ SSP ID ಯನ್ನು DTE One Portal ರಲ್ಲಿ ಸರಿಯಾಗಿ Mapping ಮಾಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/AdobeScan19-Nov-2024(2).pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "30/10/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ1/35/2024",
-      "description": "2024-25ನೇ ಸಾಲಿನಲ್ಲಿ ಖಾಸಗಿಅ ನುದಾನರಹಿತ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿನ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ/working Professionals ಬಿ.ಇ., ಆಡಳಿತ ಮಂಡಳಿ ಕೋಟಾದಡಿ ಹಾಗೂ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿನ working professionals ಪ್ರವೇಶಗಳ ಅನುಮೋದನೆ ಪಡೆಯಲು ದಿನಾಂಕವನ್ನು ಮುಂದೂಡಿರುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/DateextnforlateralentryBEmanagementadmapproval.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "09/10/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸಿಎಂ1/35/2024",
-      "description": "2024-25ನೇ ಸಾಲಿನಲ್ಲಿ ಖಾಸಗಿ ಅನುದಾನರಹಿತ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿನ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ/Working Professionals ಬಿ.ಇ ಆಡಳಿತ ಮಂಡಳಿ ಕೋಟಾದಡಿ ಹಾಗೂ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿನ Working Professionals ಪ್ರವೇಶಗಳ ಅನುಮೋದನೆ ಪಡೆಯಲು ದಿನಾಂಕವನ್ನು ಮುಂದೂಡಿರುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/ACM9-10-2024.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "07/10/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ0ಎಸಿಎಂ1/35/2024",
-      "description": "2024-25ನೇ ಸಾಲಿನಲ್ಲಿ ಖಾಸಗಿ ಅನುದಾನರಹಿತ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿನ ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ/working professionals ಬಿ.ಇ ಆಡಳಿತ ಮಂಡಳಿ ಕೋಟಾದಡಿ ಹಾಗೂ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿನ working professionals ಪ್ರವೇಶಗಳ ಅನುಮೋದನೆ ಕುರಿತು",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/2024-25lateralentryadmissionentryapproval.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "25/09/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ0ಎಸ್‌ ಸಿಹೆಚ್1/17/2024‌",
-      "description": "2024-25ನೇ ಸಾಲಿಗೆ ಮೆಟ್ರಿಕ್‌ ನಂತರದ ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶದ ಆನ್‌ ಲೈನ್‌ ಮುಖಾಂತರ ಪರಿಶಿಷ್ಟ ಜಾತಿ/ಪರಿಶಷ್ಟ ಪಂಗಡದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶುಲ್ಕ ಮರುಪಾವತಿ ಮತ್ತು ರಕ್ಷಣಾದಳದ ಸಿಬ್ಬಂದಿಯ ಮಕ್ಕಳಿಗೆ/ಆಶ್ರಿತರಿಗೆ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆಅರ್ಜಿ ಅಹ್ವಾವನಿಸುವ ಬಗ್ಗೆ",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/2024-25SC-ST&DefCirrcular.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.250467",
-      "source": "ACM"
-    },
-    {
-      "date": "18/09/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ0ಎಸ್‌ ಸಿಹೆಚ್1/16/2024",
-      "description": "2024-25ನೇ ಸಾಲಿಗೆ ಪಾಲಿಟೆಕ್ನಿಕ್‌ ಮತ್ತು ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆಯುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಎ.ಐ.ಸಿ.ಟಿ.ಇ ಯ ಪ್ರಗತಿ, ಸಕ್ಷಮ್‌ ಮತ್ತು ಸ್ವನಾಥ್‌ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/circularforNSPscholarship.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.251466",
-      "source": "ACM"
-    },
-    {
-      "date": "12/09/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್‌ 2/4/2024",
-      "description": "2024-25ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನಲ್ಲಿ ರಾಜ್ಯದ ಎಲ್ಲಾ ಸರ್ಕಾರಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಪ್ರಥಮ ಮತ್ತು ತೃತೀಯ ಸೆಮಿಸ್ಟರ್(ಲ್ಯಾಟರಲ್‌ ಎಂಟ್ರಿ)ಯಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆದು ವ್ಯಾಸಂಗ ಮಾಡುತ್ತಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳ ಬೋನಫೈಡ್‌ ಡೇಟಾವನ್ನು ಇಲಾಖೆಯ ಪ್ರವೇಶಾತಿ ಪೋರ್ಟಲ್‌ನಲ್ಲಿ ಅಪ್‌ಡೇಟ್‌ ಮಾಡುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/Regstudent'sDataentryinDTEoneportal.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.251466",
-      "source": "ACM"
-    },
-    {
-      "date": "09/09/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್‌2/4/2024",
-      "description": "2024-25 ನೇ ಸಾಲಿಗೆಸರ್ಕಾರಿ ಕಿರಿಯ ತಾಂತ್ರಿಕ ಶಾಲೆಗಳಲ್ಲಿ ವ್ಯಾಸಂಗ ಮಾಡುತ್ತಿರುವ ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿಗಳು ಪ್ರಿಮೆಟ್ರಿಕ್‌ -ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿ ವೇತನದ ತಂತ್ರಾಂಶದಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿ ವೇತನಕ್ಕಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಬಗ್ಗೆ.",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/AdobeScan09-Sept-2024.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.251466",
-      "source": "ACM"
-    },
-    {
-      "date": "31/08/2024",
-      "circular_no": "ಡಿಟಿಇ/ಆರ್‌ ಇಸಿ(1) /2024",
-      "description": "ವಿದ್ಯಾರ್ಥಿಗಳ ಪ್ರವೇಶ ಮತ್ತು ಬೋಧನಾ ಶುಲ್ಕ ಪಾವತಿಸಿರುವ ಮಾಹಿತಿಯನ್ನು ವದಗಿಸುವ ಬಗ್ಗೆ",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/ACM/REC2024.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.251466",
-      "source": "ACM"
-    },
-    {
-      "date": "30/08/2024",
-      "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಎಸ್‌ಸಿಹೆಚ್2/6/2022",
-      "description": "2024-25ನೇ ಶೈಕ್ಷಣಿಕ ಸಾಲಿನಲ್ಲಿ ರಾಜ್ಯದ ಎಲ್ಲಾ ಸರ್ಕಾರಿ, ಅನುದಾನಿತ ಮತ್ತು ಅನುದಾನ ರಹಿತ ಖಾಸಗಿ ಪಾಲಿಟೆಕ್ನಿಕ್‌ಗಳಲ್ಲಿ ಪ್ರವೇಶ ಪಡೆದು ವ್ಯಾಸಂಗ ಮಾಡುತ್ತಿರುವ ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿಗಳ ಬೋನಫೈಡ್‌ ಡೇಟಾವನ್ನು ಇಲಾಖೆಯ ಪ್ರವೇಶಾತಿ ಪೋರ್ಟಲ್‌ನಲ್ಲಿ ಅಪ್‌ ಡೇಟ್‌ ಮಾಡುವ ಬಗ್ಗೆ",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/AdobeScan11-Sept-2024.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.251466",
-      "source": "ACM"
-    },
-    {
-      "date": "30/08/2024",
-      "circular_no": "ಇಡಿ 40 ಡಿಟಿಇ 2022",
-      "description": "ಸಿ & ಆರ್‌ ಅಂತಿಮ ಕರಡು",
-      "download_link": "https://dtek.karnataka.gov.in/storage/pdf-files/EST/0ED40DTE2022DraftC&RFinalDraftOriginal(DS)30082024.pdf",
-      "source_url": "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn",
-      "scraped_at": "2025-08-06T19:15:54.251466",
-      "source": "ACM"
-    },
-    {
       "date": "29/04/2024",
       "circular_no": "ಡಿಟಿಇ-ಎಡಿಎಂಐ೦ಇಎಸ್‌ಟಿ(10)/56/2024",
       "description": "ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆಯ ವ್ಯಾಪ್ತಿಯಲ್ಲಿನ ಸರ್ಕಾರಿ/ಅನುದಾನಿತ ಇಂಜಿನಿಯರಿಂಗ್‌ ಕಾಲೇಜುಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಅಧ್ಯಾಪಕರುಗಳಿಗೆ 7 ನೇ ಎಐಸಿಟಿಇ ವೇತನ ಶ್ರೇಣಿಯಲ್ಲಿ ಪದೋನ್ನತಿ ನೀಡುವ ಬಗ್ಗೆ.",
@@ -1200,21 +786,20 @@
       "source": "EST"
     }
   ],
-  "scraping_status": "success",
+  "scraping_status": "partial",
   "source_breakdown": {
     "departmental": 49,
     "dvp": 0,
     "est": 38,
-    "acm": 46
+    "acm": 0
   },
   "merge_info": {
-    "merged_at": "2025-08-06T19:16:01.229573",
+    "merged_at": "2025-08-06T13:50:02.531843",
     "sources_used": [
       "departmental",
-      "est",
-      "acm"
+      "est"
     ],
-    "fresh_data_count": 150,
-    "total_after_merge": 133
+    "fresh_data_count": 100,
+    "total_after_merge": 87
   }
 }
