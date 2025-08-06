@@ -1,0 +1,62 @@
+name: Merge Circular Data
+
+on:
+  schedule:
+    # Run every hour at :50 minutes (after micro-scrapers)
+    - cron: '50 * * * *'
+  workflow_dispatch: # Allow manual trigger
+  workflow_run:
+    # Also run after any micro-scraper completes
+    workflows: ["Scrape Departmental Circulars", "Scrape EST Circulars", "Scrape ACM Circulars", "Scrape DVP Circulars"]
+    types: [completed]
+
+jobs:
+  merge-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5  # Very fast merge operation
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Pull latest data
+      run: |
+        git pull origin main
+
+    - name: Merge all data sources
+      timeout-minutes: 3
+      run: |
+        python merge_data.py
+
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain circulars.json)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit merged data
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action - Merger"
+        git add circulars.json
+        git commit -m "Merge circular data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+        git push
+
+    - name: Deploy to GitHub Pages
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        exclude_assets: '.github,scraper.py,micro_scraper.py,merge_data.py,requirements.txt,README.md,data_*.json'

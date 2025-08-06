@@ -1,12 +1,14 @@
-name: Scrape DTE Circulars
+# OLD MONOLITHIC SCRAPER - DISABLED
+# Replaced with micro-scraper architecture for reliability
+# name: Scrape DTE Circulars
 
 on:
-  schedule:
-    # Run every 30 minutes
-    - cron: '*/30 * * * *'
-  workflow_dispatch: # Allow manual trigger
-  push:
-    branches: [ main ]
+  # schedule:
+  #   # Run every 30 minutes
+  #   - cron: '*/30 * * * *'
+  workflow_dispatch: # Keep manual trigger for testing
+  # push:
+  #   branches: [ main ]
 
 jobs:
   scrape:

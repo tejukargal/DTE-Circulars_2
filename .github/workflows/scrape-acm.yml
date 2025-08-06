@@ -1,0 +1,51 @@
+name: Scrape ACM Circulars
+
+on:
+  schedule:
+    # Run every 2 hours at :30 minutes (staggered)
+    - cron: '30 */2 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  scrape-acm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8  # Short timeout for micro-scraper
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4
+
+    - name: Run ACM micro-scraper
+      timeout-minutes: 5  # Fast execution
+      run: |
+        python micro_scraper.py ACM "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn"
+
+    - name: Check for new data
+      id: check-data
+      run: |
+        if [ -f "data_acm.json" ]; then
+          echo "data_found=true" >> $GITHUB_OUTPUT
+        else
+          echo "data_found=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit ACM data
+      if: steps.check-data.outputs.data_found == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action - ACM"
+        git add data_acm.json
+        git commit -m "Update ACM circulars - $(date -u '+%Y-%m-%d %H:%M UTC')" || exit 0
+        git push
