@@ -55,7 +55,7 @@ class CircularScraper:
         self.session.mount("https://", adapter)
         
         self.start_time = datetime.now()
-        self.max_execution_time = 300 if self.is_github_actions else 600  # 5 min for GHA, 10 min local
+        self.max_execution_time = 600 if self.is_github_actions else 900  # 10 min for GHA with 4 URLs, 15 min local
     
     
     def is_valid_circular(self, date, circular_no, description, download_link):
@@ -110,8 +110,11 @@ class CircularScraper:
             return True
         return False
     
-    def fetch_url(self, url, max_attempts=3):
+    def fetch_url(self, url, max_attempts=None):
         """Enhanced URL fetching with multiple fallback strategies"""
+        # Optimize for GitHub Actions - fewer attempts, faster execution
+        if max_attempts is None:
+            max_attempts = 2 if self.is_github_actions else 3
         user_agents = [
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
@@ -125,11 +128,17 @@ class CircularScraper:
                 if attempt < len(user_agents):
                     self.session.headers['User-Agent'] = user_agents[attempt]
                 
-                # Progressive timeout increases: (30,120), (45,150), (60,180)
-                base_connect = 30 if self.is_github_actions else 20
-                base_read = 120 if self.is_github_actions else 90
-                connect_timeout = base_connect + (attempt * 15)
-                read_timeout = base_read + (attempt * 30)
+                # Progressive timeout increases - faster for GitHub Actions
+                if self.is_github_actions:
+                    # Shorter timeouts for GitHub Actions: (20,60), (30,90)
+                    base_connect, base_read = 20, 60
+                    connect_timeout = base_connect + (attempt * 10)
+                    read_timeout = base_read + (attempt * 30)
+                else:
+                    # Normal timeouts for local: (20,90), (35,120), (50,150)
+                    base_connect, base_read = 20, 90
+                    connect_timeout = base_connect + (attempt * 15)
+                    read_timeout = base_read + (attempt * 30)
                 timeout = (connect_timeout, read_timeout)
                 
                 print(f"Attempt {attempt + 1}/{max_attempts} for {url} with timeout {timeout}")
@@ -199,8 +208,8 @@ class CircularScraper:
             table_rows = soup.find_all('tr')
             
             
-            # Process maximum 50 rows for speed in GitHub Actions
-            max_rows = 50 if self.is_github_actions else 100
+            # Process maximum 30 rows for speed in GitHub Actions with 4 URLs
+            max_rows = 30 if self.is_github_actions else 100
             rows_to_process = table_rows[1:max_rows+1]  # Skip header row
             
             for row in rows_to_process:
