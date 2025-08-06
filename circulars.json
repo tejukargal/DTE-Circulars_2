@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-06T17:01:28.736591",
+  "last_updated": "2025-08-06T17:10:46.366529",
   "total_circulars": 262,
   "circulars": [
     {
@@ -2107,7 +2107,7 @@
     "acm": 0
   },
   "merge_info": {
-    "merged_at": "2025-08-06T17:01:28.736598",
+    "merged_at": "2025-08-06T17:10:46.366540",
     "sources_used": [],
     "fresh_data_count": 0,
     "total_after_merge": 262
