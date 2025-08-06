@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTE Scraper Status</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .source { display: flex; justify-content: space-between; align-items: center; padding: 15px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+        .status-active { background: #e8f5e8; border-color: #4caf50; }
+        .status-partial { background: #fff3cd; border-color: #ffc107; }
+        .status-inactive { background: #f8d7da; border-color: #dc3545; }
+        .status-indicator { width: 12px; height: 12px; border-radius: 50%; margin-right: 10px; }
+        .active { background: #4caf50; }
+        .partial { background: #ffc107; }
+        .inactive { background: #dc3545; }
+        .back-link { margin-top: 20px; }
+        .back-link a { color: #007bff; text-decoration: none; }
+        .timestamp { font-size: 0.85em; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 DTE Scraper Status</h1>
+        <p>Real-time status of circular data sources</p>
+        
+        <div id="sources-status">
+            <div class="source status-active">
+                <div style="display: flex; align-items: center;">
+                    <span class="status-indicator active"></span>
+                    <strong>Departmental Circulars</strong>
+                </div>
+                <div>
+                    <span id="dept-count">-</span> circulars
+                    <br><span class="timestamp" id="dept-time">-</span>
+                </div>
+            </div>
+            
+            <div class="source status-partial">
+                <div style="display: flex; align-items: center;">
+                    <span class="status-indicator partial"></span>
+                    <strong>EST Circulars</strong>
+                </div>
+                <div>
+                    <span id="est-count">-</span> circulars
+                    <br><span class="timestamp" id="est-time">-</span>
+                </div>
+            </div>
+            
+            <div class="source status-active">
+                <div style="display: flex; align-items: center;">
+                    <span class="status-indicator active"></span>
+                    <strong>ACM Polytechnic</strong>
+                </div>
+                <div>
+                    <span id="acm-count">-</span> circulars
+                    <br><span class="timestamp" id="acm-time">-</span>
+                </div>
+            </div>
+            
+            <div class="source status-inactive">
+                <div style="display: flex; align-items: center;">
+                    <span class="status-indicator inactive"></span>
+                    <strong>DVP Circulars</strong>
+                </div>
+                <div>
+                    <span id="dvp-count">-</span> circulars
+                    <br><span class="timestamp" id="dvp-time">-</span>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 20px; padding: 15px; background: #e9ecef; border-radius: 5px;">
+            <h3>📊 System Status</h3>
+            <p><strong>Architecture:</strong> Micro-scraper (4 independent sources)</p>
+            <p><strong>Update Frequency:</strong> Every 2 hours per source</p>
+            <p><strong>Last Merge:</strong> <span id="merge-time">-</span></p>
+            <p><strong>Total Circulars:</strong> <span id="total-count">-</span></p>
+        </div>
+        
+        <div class="back-link">
+            <a href="index.html">← Back to Circulars</a>
+        </div>
+    </div>
+    
+    <script>
+        async function loadStatus() {
+            try {
+                // Load main circulars data
+                const response = await fetch('circulars.json');
+                const data = await response.json();
+                
+                document.getElementById('total-count').textContent = data.total_circulars || 0;
+                document.getElementById('merge-time').textContent = 
+                    new Date(data.last_updated).toLocaleString() || '-';
+                
+                // Load individual source data
+                const sources = ['departmental', 'est', 'acm', 'dvp'];
+                
+                for (const source of sources) {
+                    try {
+                        const sourceResponse = await fetch(`data_${source}.json`);
+                        if (sourceResponse.ok) {
+                            const sourceData = await sourceResponse.json();
+                            document.getElementById(`${source === 'departmental' ? 'dept' : source}-count`)
+                                .textContent = sourceData.count || 0;
+                            document.getElementById(`${source === 'departmental' ? 'dept' : source}-time`)
+                                .textContent = new Date(sourceData.scraped_at).toLocaleString() || '-';
+                        }
+                    } catch (e) {
+                        console.log(`Could not load ${source} data:`, e);
+                    }
+                }
+                
+            } catch (error) {
+                console.error('Error loading status:', error);
+            }
+        }
+        
+        // Load status on page load
+        loadStatus();
+        
+        // Refresh every 5 minutes
+        setInterval(loadStatus, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
