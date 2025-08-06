@@ -9,6 +9,7 @@ import sys
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib3
+import ssl
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class CircularScraper:
@@ -20,21 +21,31 @@ class CircularScraper:
             "https://dtek.karnataka.gov.in/page/Circulars/DVP/kn"
         ]
         
-        # Simple session with optimized settings
+        # Enhanced session with multiple fallback user agents and headers
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Connection': 'keep-alive'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'DNT': '1',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Sec-Fetch-User': '?1',
+            'Cache-Control': 'max-age=0'
         })
         
-        # Simple retry strategy
+        # Enhanced retry strategy with exponential backoff
         retry_strategy = Retry(
-            total=2,
-            backoff_factor=1,
-            status_forcelist=[500, 502, 503, 504],
-            allowed_methods=["HEAD", "GET", "OPTIONS"]
+            total=5,  # More retries
+            backoff_factor=2,  # Exponential backoff: 2, 4, 8, 16 seconds
+            status_forcelist=[429, 500, 502, 503, 504, 520, 521, 522, 523, 524],
+            allowed_methods=["HEAD", "GET", "OPTIONS"],
+            raise_on_redirect=False,
+            raise_on_status=False
         )
         
         adapter = HTTPAdapter(max_retries=retry_strategy)
@@ -97,20 +108,74 @@ class CircularScraper:
             return True
         return False
     
-    def fetch_url(self, url):
-        """Enhanced URL fetching with better timeout handling"""
-        try:
-            # Use tuple format for separate connect/read timeouts
-            timeout = (15, 90) if self.is_github_actions else (20, 120)  # (connect, read)
-            response = self.session.get(url, timeout=timeout, verify=False, allow_redirects=True)
-            if response.status_code == 200:
-                return response
-            else:
-                print(f"HTTP {response.status_code} for {url}")
-                return None
-        except Exception as e:
-            print(f"Failed to fetch {url}: {e}")
-            return None
+    def fetch_url(self, url, max_attempts=3):
+        """Enhanced URL fetching with multiple fallback strategies"""
+        user_agents = [
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0'
+        ]
+        
+        for attempt in range(max_attempts):
+            try:
+                # Use different user agent for each attempt
+                if attempt < len(user_agents):
+                    self.session.headers['User-Agent'] = user_agents[attempt]
+                
+                # Progressive timeout increases: (30,120), (45,150), (60,180)
+                base_connect = 30 if self.is_github_actions else 20
+                base_read = 120 if self.is_github_actions else 90
+                connect_timeout = base_connect + (attempt * 15)
+                read_timeout = base_read + (attempt * 30)
+                timeout = (connect_timeout, read_timeout)
+                
+                print(f"Attempt {attempt + 1}/{max_attempts} for {url} with timeout {timeout}")
+                
+                # Try with SSL verification disabled and multiple fallback options
+                response = self.session.get(
+                    url, 
+                    timeout=timeout, 
+                    verify=False, 
+                    allow_redirects=True,
+                    stream=False
+                )
+                
+                if response.status_code == 200:
+                    print(f"Success on attempt {attempt + 1}")
+                    return response
+                else:
+                    print(f"HTTP {response.status_code} on attempt {attempt + 1}")
+                    if attempt < max_attempts - 1:
+                        time.sleep(3 * (attempt + 1))  # Progressive delay
+                        
+            except requests.exceptions.SSLError as e:
+                print(f"SSL error on attempt {attempt + 1}: {e}")
+                if attempt < max_attempts - 1:
+                    time.sleep(5 * (attempt + 1))
+                    
+            except requests.exceptions.ConnectTimeout as e:
+                print(f"Connection timeout on attempt {attempt + 1}: {e}")
+                if attempt < max_attempts - 1:
+                    time.sleep(10 * (attempt + 1))  # Longer delay for connection timeouts
+                    
+            except requests.exceptions.ReadTimeout as e:
+                print(f"Read timeout on attempt {attempt + 1}: {e}")
+                if attempt < max_attempts - 1:
+                    time.sleep(5 * (attempt + 1))
+                    
+            except requests.exceptions.ConnectionError as e:
+                print(f"Connection error on attempt {attempt + 1}: {e}")
+                if attempt < max_attempts - 1:
+                    time.sleep(8 * (attempt + 1))
+                    
+            except Exception as e:
+                print(f"Unexpected error on attempt {attempt + 1}: {e}")
+                if attempt < max_attempts - 1:
+                    time.sleep(5 * (attempt + 1))
+        
+        print(f"All {max_attempts} attempts failed for {url}")
+        return None
     
     def scrape_circulars(self, url):
         if self.check_execution_time():
