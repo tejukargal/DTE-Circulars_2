@@ -18,7 +18,9 @@ class CircularScraper:
         
         self.urls = [
             "https://dtek.karnataka.gov.in/info-4/Departmental+Circulars/kn",
-            "https://dtek.karnataka.gov.in/page/Circulars/DVP/kn"
+            "https://dtek.karnataka.gov.in/page/Circulars/DVP/kn",
+            "https://dtek.karnataka.gov.in/page/Circulars/EST/kn",
+            "https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn"
         ]
         
         # Enhanced session with multiple fallback user agents and headers
@@ -196,6 +198,7 @@ class CircularScraper:
             # Find table rows containing circular data
             table_rows = soup.find_all('tr')
             
+            
             # Process maximum 50 rows for speed in GitHub Actions
             max_rows = 50 if self.is_github_actions else 100
             rows_to_process = table_rows[1:max_rows+1]  # Skip header row
@@ -204,11 +207,18 @@ class CircularScraper:
                 cells = row.find_all('td')
                 if len(cells) >= 3:
                     # Simple extraction based on URL type
-                    if "DVP" in url and len(cells) >= 4:
-                        # DVP format: Skip serial, use date, circular_no, description
-                        date = cells[1].get_text(strip=True)
-                        circular_no = cells[2].get_text(strip=True)
-                        description = cells[3].get_text(strip=True)
+                    if any(page_type in url for page_type in ["DVP", "EST", "ACM"]) and len(cells) >= 4:
+                        # DVP/EST/ACM format 
+                        if len(cells) >= 5 and any(page_type in url for page_type in ["EST", "ACM"]):
+                            # 5-column format (EST/ACM): date, circular_no, description, empty, action
+                            date = cells[0].get_text(strip=True)
+                            circular_no = cells[1].get_text(strip=True)
+                            description = cells[2].get_text(strip=True)
+                        else:
+                            # 4-column format (DVP): Skip serial, use date, circular_no, description  
+                            date = cells[1].get_text(strip=True)
+                            circular_no = cells[2].get_text(strip=True)
+                            description = cells[3].get_text(strip=True)
                         
                         # Skip header rows
                         if date.lower() in ['date', 'ದಿನಾಂಕ'] or len(description) < 10:
@@ -342,22 +352,27 @@ class CircularScraper:
         # Sort by parsed date, newest first
         all_circulars.sort(key=lambda x: parse_date(x['date']), reverse=True)
         
-        # Ensure balanced representation from both sources
+        # Ensure balanced representation from all sources
         dept_circulars = [c for c in all_circulars if 'Departmental' in c['source_url']]
         dvp_circulars = [c for c in all_circulars if 'DVP' in c['source_url']]
+        est_circulars = [c for c in all_circulars if 'EST' in c['source_url']]
+        acm_circulars = [c for c in all_circulars if 'ACM' in c['source_url']]
         
-        # Take top 200 from each source to ensure representation
-        selected_circulars = dept_circulars[:200] + dvp_circulars[:200]
+        # Take top 100 from each source to ensure representation
+        selected_circulars = (dept_circulars[:100] + dvp_circulars[:100] + 
+                            est_circulars[:100] + acm_circulars[:100])
         
         # Sort combined selection by date again
         selected_circulars.sort(key=lambda x: parse_date(x['date']), reverse=True)
         
-        # Take top 400 total, but this ensures we have mix from both sources
+        # Take top 400 total, but this ensures we have mix from all sources
         final_circulars = selected_circulars[:400]
         
         # Count by source for reporting
         final_dept_count = sum(1 for c in final_circulars if 'Departmental' in c['source_url'])
         final_dvp_count = sum(1 for c in final_circulars if 'DVP' in c['source_url'])
+        final_est_count = sum(1 for c in final_circulars if 'EST' in c['source_url'])
+        final_acm_count = sum(1 for c in final_circulars if 'ACM' in c['source_url'])
         
         data = {
             'last_updated': datetime.now().isoformat(),
@@ -366,7 +381,9 @@ class CircularScraper:
             'scraping_status': 'success' if circulars else 'partial',
             'source_breakdown': {
                 'departmental': final_dept_count,
-                'dvp': final_dvp_count
+                'dvp': final_dvp_count,
+                'est': final_est_count,
+                'acm': final_acm_count
             }
         }
         
@@ -376,6 +393,8 @@ class CircularScraper:
         print(f"Saved {len(final_circulars)} total circulars to {filename}")
         print(f"  - Departmental: {final_dept_count}")
         print(f"  - DVP: {final_dvp_count}")
+        print(f"  - EST: {final_est_count}")
+        print(f"  - ACM: {final_acm_count}")
 
 def signal_handler(signum, frame):
     print(f"\nReceived signal {signum}. Gracefully shutting down...")

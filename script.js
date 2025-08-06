@@ -162,7 +162,9 @@ function escapeHtml(text) {
 function getSectionName(category) {
     const sectionNames = {
         'DVP': 'DVP Circulars',
-        'Departmental': 'Departmental Orders'
+        'Departmental': 'Departmental Orders',
+        'EST': 'EST Circulars',
+        'ACM': 'ACM Polytechnic Circulars'
     };
     return sectionNames[category] || 'DTE Karnataka';
 }
@@ -185,6 +187,16 @@ function generatePDFLink(circular, category) {
     // For DVP category, use the DVP page
     if (category === 'DVP') {
         return 'https://dtek.karnataka.gov.in/page/Circulars/DVP/kn';
+    }
+    
+    // For EST category, use the EST page
+    if (category === 'EST') {
+        return 'https://dtek.karnataka.gov.in/page/Circulars/EST/kn';
+    }
+    
+    // For ACM category, use the ACM page
+    if (category === 'ACM') {
+        return 'https://dtek.karnataka.gov.in/page/Circulars/ACM-Polytechnic/kn';
     }
     
     // Fallback to the main circulars page
@@ -429,6 +441,16 @@ async function loadCirculars() {
                 circular.circular_no?.includes('ಡಿವಿಪಿ') || 
                 circular.circular_no?.includes('DVP') ||
                 circular.download_link?.includes('/DVP/')
+            );
+        } else if (currentCategory === 'EST') {
+            filteredCirculars = filteredCirculars.filter(circular => 
+                // Include EST circulars based on source URL
+                circular.source_url && circular.source_url.includes('Circulars/EST')
+            );
+        } else if (currentCategory === 'ACM') {
+            filteredCirculars = filteredCirculars.filter(circular => 
+                // Include ACM circulars based on source URL
+                circular.source_url && circular.source_url.includes('Circulars/ACM')
             );
         }
 

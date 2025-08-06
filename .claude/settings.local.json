@@ -23,7 +23,10 @@
       "Bash(git push:*)",
       "Bash(git pull:*)",
       "Bash(git rebase:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(gh workflow run:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:dtek.karnataka.gov.in)"
     ],
     "deny": []
   }
